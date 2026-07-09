@@ -1,439 +1,1363 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Freedom Group Construction | Unlimited General Contractor — Charlotte, NC</title>
-  <meta name="description" content="Freedom Group Construction is a licensed unlimited general contractor serving Charlotte, NC and the surrounding metro. New construction, full renovations, additions, kitchen & bath, decks, roofing. Free written quotes.">
-  <meta name="keywords" content="general contractor charlotte nc, unlimited license gc, home renovation charlotte nc, new construction charlotte">
-  <link rel="canonical" href="https://freedomgroupconstruction.com/">
-  <meta property="og:title" content="Freedom Group Construction | Unlimited General Contractor — Charlotte, NC">
-  <meta property="og:description" content="Freedom Group Construction is a licensed unlimited general contractor serving Charlotte, NC and the surrounding metro. New construction, full renovations, additions, kitchen & bath, decks, roofing. Free written quotes.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://freedomgroupconstruction.com/">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#CC0000">
-  <link rel="stylesheet" href="shared.css">
-  <script type="application/ld+json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Freedom Group Construction | Unlimited General Contractor — Charlotte, NC</title>
+<meta name="description" content="Freedom Group Construction is a licensed unlimited general contractor serving Charlotte NC. New home construction, renovations, additions. Free quotes.">
+<link rel="canonical" href="https://freedomgroupconstruction.com/">
+<meta property="og:url" content="https://freedomgroupconstruction.com/">
+<script type="application/ld+json">
 {"@context":"https://schema.org","@type":"GeneralContractor",
-"name":"Freedom Group Construction","url":"https://freedomgroupconstruction.com/","telephone":"7047777850",
-"priceRange":"$$","description":"Built Right. Licensed for Everything.",
-"address":{"@type":"PostalAddress","addressLocality":"Charlotte","addressRegion":"NC","addressCountry":"US"},
-"areaServed":[{"@type":"City","name":"Charlotte"},{"@type":"City","name":"Huntersville"},{"@type":"City","name":"Concord"},{"@type":"City","name":"Mooresville"},{"@type":"City","name":"Matthews"},{"@type":"City","name":"Pineville"},{"@type":"City","name":"Ballantyne"},{"@type":"City","name":"Mount Holly"},{"@type":"City","name":"Gastonia"},{"@type":"City","name":"Waxhaw"},{"@type":"City","name":"Stallings"},{"@type":"City","name":"Indian Trail"},{"@type":"City","name":"Fort Mill"},{"@type":"City","name":"Tega Cay"},{"@type":"City","name":"Lake Wylie"},{"@type":"City","name":"Rock Hill"}]}
+"name":"Freedom Group Construction","url":"https://freedomgroupconstruction.com/",
+"telephone":"7047777850","priceRange":"$$",
+"description":"Built Right. Licensed for Everything.",
+"address":{"@type":"PostalAddress","addressLocality":"Charlotte","addressRegion":"NC","addressCountry":"US"}}
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ══════════════════════════════════════════════════════════════
+   TOKENS
+══════════════════════════════════════════════════════════════ */
+:root{
+  --red:       #CC0000;
+  --red-dk:    #A80000;
+  --red-glow:  rgba(204,0,0,.45);
+  --black:     #080808;
+  --off:       #0E0E0E;
+  --ink:       #1A1A1A;
+  --body:      #4A4A4A;
+  --muted:     #7A7A7A;
+  --rule:      #E8E8E6;
+  --surface:   #F7F7F5;
+  --white:     #FFFFFF;
+  --max:       1220px;
+  --r:         2px;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   RESET
+══════════════════════════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{font-size:16px;}
+body{
+  font-family:'DM Sans',system-ui,sans-serif;
+  background:var(--black);color:var(--white);
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;cursor:none;
+}
+img{display:block;max-width:100%;height:auto;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+
+/* ══════════════════════════════════════════════════════════════
+   TYPE
+══════════════════════════════════════════════════════════════ */
+h1,h2,h3{
+  font-family:'DM Serif Display',Georgia,serif;
+  font-weight:400;letter-spacing:-.02em;line-height:1.06;
+}
+h4{font-family:'DM Sans',sans-serif;font-weight:600;line-height:1.3;}
+h1{font-size:clamp(3.4rem,6.5vw,5.8rem);}
+h2{font-size:clamp(2.2rem,4.2vw,3.4rem);}
+h3{font-size:clamp(1.4rem,2vw,1.9rem);}
+.eyebrow{
+  font-family:'DM Mono',monospace;font-size:.68rem;
+  letter-spacing:.2em;text-transform:uppercase;
+  color:var(--red);display:block;margin-bottom:.9rem;
+}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 48px;}
+@media(max-width:600px){.wrap{padding:0 20px;}}
+
+/* ══════════════════════════════════════════════════════════════
+   GRAIN
+══════════════════════════════════════════════════════════════ */
+#grain{
+  position:fixed;inset:0;z-index:9998;
+  pointer-events:none;opacity:.04;mix-blend-mode:overlay;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   CURSOR
+══════════════════════════════════════════════════════════════ */
+#c-dot{
+  position:fixed;z-index:9999;pointer-events:none;
+  width:6px;height:6px;background:var(--red);border-radius:50%;
+  transform:translate(-50%,-50%);
+  transition:width .15s,height .15s;
+  box-shadow:0 0 6px rgba(204,0,0,.6);
+}
+#c-ring{
+  position:fixed;z-index:9997;pointer-events:none;
+  width:36px;height:36px;
+  border:1px solid rgba(255,255,255,.18);border-radius:50%;
+  transform:translate(-50%,-50%);
+  transition:width .25s cubic-bezier(.22,.68,0,1.2),height .25s cubic-bezier(.22,.68,0,1.2),border-color .2s;
+}
+#c-label{
+  position:fixed;z-index:9999;pointer-events:none;
+  font-family:'DM Mono',monospace;font-size:.58rem;
+  letter-spacing:.14em;text-transform:uppercase;
+  color:var(--white);opacity:0;white-space:nowrap;
+  transform:translate(16px,-50%);transition:opacity .2s;
+}
+body.c-on #c-dot{width:9px;height:9px;box-shadow:0 0 10px rgba(204,0,0,.8);}
+body.c-on #c-ring{width:52px;height:52px;border-color:var(--red);border-width:1.5px;}
+body.c-on #c-label{opacity:1;}
+@media(hover:none){#c-dot,#c-ring,#c-label{display:none;}body{cursor:auto;}}
+
+/* ══════════════════════════════════════════════════════════════
+   SCROLL PROGRESS
+══════════════════════════════════════════════════════════════ */
+#progress{
+  position:fixed;top:0;left:0;right:0;height:2px;z-index:9996;
+  background:linear-gradient(90deg,var(--red),#FF5555,var(--red));
+  background-size:200%;transform:scaleX(0);transform-origin:left;
+  box-shadow:0 0 10px var(--red-glow);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   INTRO
+══════════════════════════════════════════════════════════════ */
+#intro{
+  position:fixed;inset:0;z-index:9000;background:var(--black);
+  display:flex;align-items:center;justify-content:center;
+}
+#intro-scan{
+  position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--red) 30%,#FF6666 50%,var(--red) 70%,transparent);
+  box-shadow:0 0 16px 2px var(--red-glow);
+}
+#intro-id{
+  text-align:center;opacity:0;
+  font-family:'DM Serif Display',serif;
+  font-size:clamp(1.8rem,3.5vw,2.8rem);
+  letter-spacing:-.02em;color:var(--white);
+}
+#intro-id small{
+  display:block;font-family:'DM Mono',monospace;
+  font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--red);margin-top:10px;
+}
+#intro-skip{
+  position:absolute;bottom:24px;right:24px;
+  font-family:'DM Mono',monospace;font-size:.58rem;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:rgba(255,255,255,.2);background:none;
+  border:1px solid rgba(255,255,255,.1);padding:7px 14px;
+  border-radius:2px;cursor:pointer;transition:all .2s;
+}
+#intro-skip:hover{color:var(--white);border-color:rgba(255,255,255,.3);}
+
+/* ══════════════════════════════════════════════════════════════
+   HEADER
+══════════════════════════════════════════════════════════════ */
+.hdr{
+  position:fixed;top:0;left:0;right:0;z-index:500;
+  padding:0 48px;height:72px;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  border-bottom:1px solid transparent;
+  transition:background .4s,border-color .4s,backdrop-filter .4s;
+}
+.hdr.solid{
+  background:rgba(8,8,8,.94);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-color:rgba(204,0,0,.3);
+}
+.logo{display:flex;align-items:center;gap:11px;flex:0 0 auto;}
+.logo svg{width:36px;height:36px;flex:none;}
+.logo-name{
+  font-family:'DM Serif Display',serif;font-size:1.18rem;
+  color:var(--white);line-height:1;white-space:nowrap;
+}
+.logo-sub{
+  font-family:'DM Mono',monospace;font-size:.52rem;
+  letter-spacing:.14em;text-transform:uppercase;
+  color:#444;display:block;margin-top:3px;
+}
+.nav a{
+  font-size:.86rem;font-weight:500;letter-spacing:.02em;
+  color:#666;transition:color .15s;margin-left:28px;
+}
+.nav a:hover{color:var(--white);}
+.hdr-r{display:flex;align-items:center;gap:14px;}
+.hdr-ph{
+  font-family:'DM Mono',monospace;font-size:.78rem;
+  color:rgba(255,255,255,.5);display:flex;align-items:center;gap:6px;
+}
+.hdr-ph svg{color:var(--red);}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:'DM Sans',sans-serif;font-weight:600;font-size:.9rem;
+  padding:12px 24px;border-radius:var(--r);border:1.5px solid transparent;
+  cursor:pointer;white-space:nowrap;
+  transition:transform .2s cubic-bezier(.22,.68,0,1.2),box-shadow .2s;
+}
+.btn:hover{transform:translateY(-2px);}
+.btn svg{flex:none;transition:transform .2s;}
+.btn:hover svg{transform:translateX(4px);}
+.btn-r{
+  background:linear-gradient(135deg,#E02020,#CC0000 40%,#A80000 70%,#CC0000);
+  background-size:200% 200%;color:var(--white);
+  box-shadow:0 2px 16px var(--red-glow),inset 0 1px 0 rgba(255,255,255,.14);
+}
+.btn-r:hover{box-shadow:0 6px 28px rgba(204,0,0,.5);}
+.btn-g{background:transparent;color:var(--white);border-color:rgba(255,255,255,.28);}
+.btn-g:hover{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.6);}
+.btn-dk{background:var(--ink);color:var(--white);}
+.btn-dk:hover{background:#2a2a2a;}
+.burger{display:none;flex-direction:column;gap:5px;width:32px;height:32px;background:none;border:none;cursor:pointer;padding:2px;}
+.burger span{display:block;width:100%;height:1.5px;background:var(--white);border-radius:1px;transition:all .25s;}
+.burger[aria-expanded=true] span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
+.burger[aria-expanded=true] span:nth-child(2){opacity:0;}
+.burger[aria-expanded=true] span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
+.mob{display:none;position:fixed;inset:72px 0 0;background:#040404;z-index:490;padding:40px 24px;overflow-y:auto;}
+.mob.open{display:block;}
+.mob nav a{display:block;padding:18px 0;font-family:'DM Serif Display',serif;font-size:2rem;color:#555;border-bottom:1px solid #111;transition:color .15s,padding-left .18s;}
+.mob nav a:hover{color:var(--white);padding-left:8px;}
+.mob-cta{margin-top:28px;display:flex;flex-direction:column;gap:12px;}
+.mob-cta .btn{justify-content:center;}
+@media(max-width:900px){.nav,.hdr-ph{display:none;}.burger{display:flex;}.hdr{padding:0 20px;}}
+@media(max-width:420px){.logo-sub{display:none;}.hdr-r .btn{display:none;}}
+
+/* ══════════════════════════════════════════════════════════════
+   HERO
+══════════════════════════════════════════════════════════════ */
+#hero{
+  position:relative;height:100vh;min-height:640px;
+  overflow:hidden;display:flex;align-items:center;
+  background:var(--black);
+}
+#hc{position:absolute;inset:0;z-index:1;}
+
+/* depth layers */
+.lyr{position:absolute;inset:0;will-change:transform;}
+#lbg{
+  z-index:2;
+  background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600&q=85') center/cover;
+  filter:blur(5px) brightness(.22);
+}
+#lvg{
+  z-index:3;
+  background:
+    radial-gradient(ellipse 70% 70% at 50% 50%,transparent 20%,rgba(8,8,8,.95) 100%),
+    linear-gradient(to bottom,rgba(8,8,8,.6) 0%,transparent 40%,rgba(8,8,8,.65) 100%);
+}
+#lg{z-index:4;pointer-events:none;background:radial-gradient(ellipse 30% 50% at 10% 60%,rgba(204,0,0,.12),transparent 70%);}
+#lp{position:absolute;right:0;top:0;bottom:0;width:54%;z-index:5;overflow:hidden;}
+#lp::before{
+  content:'';position:absolute;inset:0;z-index:2;
+  background:linear-gradient(to right,rgba(8,8,8,1) 0%,rgba(8,8,8,.2) 48%,transparent 100%);
+}
+#lp img{width:100%;height:100%;object-fit:cover;will-change:transform;}
+#lp::after{
+  content:'';position:absolute;left:0;top:6%;bottom:6%;width:2px;z-index:3;
+  background:linear-gradient(to bottom,transparent,var(--red) 30%,var(--red) 70%,transparent);
+  box-shadow:0 0 14px var(--red-glow);
+}
+#hero::before{
+  content:'';position:absolute;top:0;bottom:0;left:50%;width:1px;z-index:8;
+  background:linear-gradient(to bottom,transparent,rgba(204,0,0,.3) 30%,rgba(204,0,0,.3) 70%,transparent);
+  pointer-events:none;transform:translateX(-50%);
+}
+#lcopy{
+  position:absolute;left:0;top:0;bottom:0;width:52%;z-index:10;
+  display:flex;flex-direction:column;justify-content:center;
+  padding-left:max(48px,calc((100vw - 1220px)/2 + 48px));
+  padding-right:48px;
+}
+#lcopy .eyebrow{color:#BB3333;}
+#lcopy h1{color:var(--white);margin:14px 0 22px;}
+#lcopy h1 em{
+  display:block;font-style:italic;
+  background:linear-gradient(110deg,#FF4444 0%,#CC0000 35%,#FF6666 65%,#CC0000 85%,#FF4444 100%);
+  background-size:300% auto;
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;animation:shm 5s linear infinite;
+}
+@keyframes shm{to{background-position:300% center;}}
+#lcopy .sub{color:rgba(255,255,255,.48);max-width:400px;line-height:1.76;font-size:1.05rem;margin-bottom:2rem;}
+.hbtns{display:flex;gap:14px;flex-wrap:wrap;}
+
+/* stats bar */
+#hstats{
+  position:absolute;bottom:0;left:0;right:0;z-index:10;
+  display:flex;border-top:1px solid rgba(255,255,255,.05);
+  background:rgba(8,8,8,.75);backdrop-filter:blur(14px);
+}
+.sb{flex:1;padding:20px 28px;border-right:1px solid rgba(255,255,255,.05);display:flex;flex-direction:column;transition:background .2s;}
+.sb:last-child{border-right:none;}
+.sb:hover{background:rgba(255,255,255,.035);}
+.sn{font-family:'DM Serif Display',serif;font-size:2.4rem;color:var(--white);line-height:1;}
+.sl{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:#333;margin-top:5px;}
+
+/* scroll hint */
+#shint{
+  position:absolute;bottom:90px;left:50%;transform:translateX(-50%);
+  z-index:10;display:flex;flex-direction:column;align-items:center;gap:8px;
+}
+#shint span{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.16em;text-transform:uppercase;color:#2a2a2a;}
+#shl{width:1px;height:36px;background:linear-gradient(to bottom,var(--red),transparent);animation:pulse 2.4s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:.2;transform:scaleY(.3);transform-origin:top;}50%{opacity:1;transform:scaleY(1);}}
+
+/* hero reveal */
+.hv{opacity:0;transform:translateY(20px);}
+.hv.on{opacity:1;transform:none;transition:opacity .85s ease,transform .85s cubic-bezier(.22,.68,0,1.2);}
+#lcopy .eyebrow.on{transition-delay:.15s;}
+#lcopy h1.on{transition-delay:.35s;}
+#lcopy .sub.on{transition-delay:.6s;}
+.hbtns.on{transition-delay:.8s;}
+#shint.on{transition-delay:1.3s;}
+
+@media(max-width:900px){
+  #hero::before,#lp::after{display:none;}
+  #lp{width:100%;opacity:.3;}
+  #lcopy{width:100%;padding:90px 24px 60px;}
+  #hstats{flex-wrap:wrap;}
+  .sb{min-width:50%;}
+}
+
+/* ══════════════════════════════════════════════════════════════
+   SECTION REVEAL SYSTEM
+══════════════════════════════════════════════════════════════ */
+[data-s]{
+  opacity:0;
+  transform:perspective(1000px) translateY(36px) rotateX(8deg);
+  transition:opacity .8s cubic-bezier(.22,.68,0,1.2),transform .8s cubic-bezier(.22,.68,0,1.2);
+}
+[data-s].in{opacity:1;transform:none;}
+[data-s=f]{transform:perspective(1000px) translateY(48px) rotateX(10deg);transition-duration:.95s;}
+[data-s=p]{transform:perspective(1000px) translateY(28px) rotateY(6deg);}
+[data-s=p].in{transform:perspective(1000px) rotateY(0);}
+[data-s=n]{transform:translateY(24px);transition-duration:.6s;}
+@media(prefers-reduced-motion:reduce){
+  [data-s],#lcopy .eyebrow,#lcopy h1,#lcopy .sub,.hbtns,#shint{opacity:1!important;transform:none!important;transition:none!important;}
+  @keyframes shm,pulse,shm{}
+}
+
+/* ══════════════════════════════════════════════════════════════
+   SERVICES — full-width photographic panels
+══════════════════════════════════════════════════════════════ */
+#services{background:var(--off);padding:0;}
+.svcs-head{padding:100px 48px 72px;max-width:var(--max);margin:0 auto;}
+@media(max-width:600px){.svcs-head{padding:72px 20px 52px;}}
+.svcs-head h2{color:var(--white);}
+.svcs-head p{color:rgba(255,255,255,.4);margin-top:12px;max-width:500px;line-height:1.72;}
+
+.svc-list{display:flex;flex-direction:column;border-top:1px solid rgba(255,255,255,.06);}
+.svc-row{
+  display:grid;grid-template-columns:1fr 1fr;
+  border-bottom:1px solid rgba(255,255,255,.06);
+  overflow:hidden;
+  transition:background .25s;
+  min-height:200px;
+}
+.svc-row:hover{background:rgba(255,255,255,.02);}
+.svc-row-l{
+  padding:44px 48px;display:flex;flex-direction:column;justify-content:center;
+  position:relative;overflow:hidden;
+}
+/* big outline number behind */
+.svc-row-l::before{
+  content:attr(data-n);
+  position:absolute;right:0;top:50%;transform:translateY(-50%);
+  font-family:'DM Serif Display',serif;font-size:9rem;line-height:1;
+  color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.04);
+  pointer-events:none;user-select:none;
+}
+.svc-row-l h3{color:var(--white);font-size:clamp(1.5rem,2.5vw,2.1rem);margin-bottom:10px;}
+.svc-row-l p{color:rgba(255,255,255,.38);font-size:.93rem;line-height:1.72;max-width:420px;margin-bottom:20px;}
+.svc-more{
+  font-family:'DM Mono',monospace;font-size:.64rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--red);display:inline-flex;align-items:center;gap:6px;
+  transition:gap .2s;
+}
+.svc-row:hover .svc-more{gap:10px;}
+.svc-row-r{
+  position:relative;overflow:hidden;min-height:240px;
+}
+.svc-row-r img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  filter:brightness(.55);
+  transition:filter .5s,transform .6s cubic-bezier(.22,.68,0,1.2);
+}
+.svc-row:hover .svc-row-r img{filter:brightness(.72);transform:scale(1.04);}
+/* red slash accent on image */
+.svc-row-r::after{
+  content:'';position:absolute;bottom:0;left:0;
+  width:4px;height:0;background:var(--red);
+  transition:height .4s cubic-bezier(.22,.68,0,1.2);
+}
+.svc-row:hover .svc-row-r::after{height:100%;}
+
+@media(max-width:800px){
+  .svc-row{grid-template-columns:1fr;}
+  .svc-row-r{min-height:200px;}
+  .svc-row-l{padding:32px 20px;}
+  .svc-row-l::before{font-size:6rem;opacity:.5;}
+}
+
+/* ══════════════════════════════════════════════════════════════
+   PORTFOLIO — staggered depth grid
+══════════════════════════════════════════════════════════════ */
+#portfolio{padding:120px 0;background:var(--black);}
+.ph{padding-bottom:60px;}
+.ph h2{color:var(--white);}
+.ph p{color:rgba(255,255,255,.35);margin-top:10px;}
+.pgrid{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  grid-template-rows:auto;
+  gap:12px;
+}
+/* Layout: 1 wide (spans 8), 1 tall right (spans 4, rows 1-2), then 3 across bottom */
+.pi{position:relative;overflow:hidden;border-radius:2px;cursor:none;}
+.pi img{width:100%;height:100%;object-fit:cover;transition:transform .65s cubic-bezier(.22,.68,0,1.2),filter .4s;}
+.pi:hover img{transform:scale(1.08);filter:brightness(.8);}
+.pi::after{content:'';position:absolute;inset:0;background:rgba(204,0,0,0);transition:background .4s;}
+.pi:hover::after{background:rgba(204,0,0,.08);}
+.plab{
+  position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(to top,rgba(8,8,8,.95) 0%,transparent 100%);
+  padding:44px 22px 18px;
+  transform:translateY(4px);transition:transform .3s ease;
+}
+.pi:hover .plab{transform:none;}
+.plab h4{color:var(--white);font-size:1.05rem;margin-bottom:3px;}
+.plab .pt{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);}
+
+/* grid placement */
+.pi:nth-child(1){grid-column:1/9;grid-row:1;height:380px;}
+.pi:nth-child(2){grid-column:9/13;grid-row:1/3;height:100%;}
+.pi:nth-child(3){grid-column:1/5;grid-row:2;height:280px;}
+.pi:nth-child(4){grid-column:5/9;grid-row:2;height:280px;}
+.pi:nth-child(5){grid-column:1/7;grid-row:3;height:300px;}
+.pi:nth-child(6){grid-column:7/13;grid-row:3;height:300px;}
+
+@media(max-width:900px){
+  .pgrid{grid-template-columns:1fr 1fr;grid-template-rows:auto;}
+  .pi{grid-column:auto!important;grid-row:auto!important;height:240px!important;}
+  .pi:nth-child(1){grid-column:1/3!important;height:280px!important;}
+}
+@media(max-width:540px){
+  .pgrid{grid-template-columns:1fr;}
+  .pi{height:220px!important;}
+  .pi:nth-child(1){height:260px!important;}
+}
+
+/* ══════════════════════════════════════════════════════════════
+   ABOUT — full-bleed background, floating glass copy
+══════════════════════════════════════════════════════════════ */
+#about{
+  position:relative;min-height:100vh;
+  display:flex;align-items:center;overflow:hidden;
+}
+#about-bg{
+  position:absolute;inset:0;
+  background:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=85') center/cover;
+  filter:brightness(.2);will-change:transform;transform:scale(1.06);
+}
+#about-bg::after{
+  content:'';position:absolute;inset:0;
+  background:
+    linear-gradient(to right,rgba(8,8,8,.82) 0%,rgba(8,8,8,.4) 60%,rgba(8,8,8,.7) 100%),
+    radial-gradient(ellipse 60% 80% at 10% 50%,rgba(204,0,0,.08) 0%,transparent 70%);
+}
+.about-inner{
+  position:relative;z-index:2;
+  max-width:var(--max);margin:0 auto;padding:120px 48px;
+  display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;
+  width:100%;
+}
+@media(max-width:900px){.about-inner{grid-template-columns:1fr;gap:48px;padding:72px 20px;}}
+
+.about-l h2{color:var(--white);margin:12px 0 24px;}
+.about-l h2 em{font-style:italic;color:var(--red);}
+.about-l p{color:rgba(255,255,255,.5);margin-bottom:.9em;}
+
+/* glass credential panel */
+.cred-panel{
+  background:rgba(255,255,255,.04);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:4px;padding:40px 36px;
+}
+.cred-panel h3{color:var(--white);margin-bottom:28px;font-size:1.35rem;}
+.cred-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+.cred{border-left:2px solid var(--red);padding-left:16px;}
+.cred-n{font-family:'DM Serif Display',serif;font-size:2.2rem;color:var(--white);line-height:1;}
+.cred-l{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:#444;margin-top:4px;}
+.about-btns{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap;}
+
+/* ══════════════════════════════════════════════════════════════
+   PROCESS — self-drawing timeline
+══════════════════════════════════════════════════════════════ */
+#process{padding:130px 0;background:var(--off);}
+.proc-head{text-align:center;margin-bottom:80px;}
+.proc-head h2{color:var(--white);}
+.proc-head p{color:rgba(255,255,255,.35);margin-top:12px;}
+
+/* timeline track */
+.timeline{position:relative;padding:0 48px;}
+@media(max-width:600px){.timeline{padding:0 20px;}}
+.tl-line{
+  position:absolute;top:28px;left:48px;right:48px;height:2px;
+  background:rgba(255,255,255,.06);
+  overflow:hidden;
+}
+.tl-fill{
+  position:absolute;inset:0;background:var(--red);
+  transform:scaleX(0);transform-origin:left;
+  box-shadow:0 0 12px var(--red-glow);
+  transition:transform .05s linear;
+}
+.tl-steps{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:24px;position:relative;z-index:2;
+}
+@media(max-width:900px){.tl-steps{grid-template-columns:1fr 1fr;}}
+@media(max-width:480px){.tl-steps{grid-template-columns:1fr;}}
+.tl-step{padding-top:60px;text-align:center;}
+.tl-dot{
+  width:16px;height:16px;border-radius:50%;
+  background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.15);
+  margin:0 auto 24px;
+  transition:background .4s,border-color .4s,box-shadow .4s,transform .4s;
+}
+.tl-step.lit .tl-dot{
+  background:var(--red);border-color:var(--red);
+  box-shadow:0 0 16px var(--red-glow);transform:scale(1.3);
+}
+.tl-step h4{color:var(--white);margin-bottom:10px;}
+.tl-step p{color:rgba(255,255,255,.3);font-size:.9rem;line-height:1.72;}
+.tl-num{
+  font-family:'DM Serif Display',serif;font-size:2.8rem;
+  color:transparent;-webkit-text-stroke:1px rgba(204,0,0,.25);
+  display:block;margin-bottom:8px;
+  transition:color .4s,-webkit-text-stroke .4s;
+}
+.tl-step.lit .tl-num{color:rgba(204,0,0,.12);-webkit-text-stroke:1px var(--red);}
+
+/* ══════════════════════════════════════════════════════════════
+   REVIEWS
+══════════════════════════════════════════════════════════════ */
+#reviews{padding:120px 0;background:var(--black);}
+.rv-head{text-align:center;margin-bottom:60px;}
+.rv-head h2{color:var(--white);}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+@media(max-width:900px){.rv-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:540px){.rv-grid{grid-template-columns:1fr;}}
+.rv{
+  background:rgba(255,255,255,.025);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:2px;padding:32px 28px;cursor:none;
+  transition:border-color .2s,background .2s,transform .35s cubic-bezier(.22,.68,0,1.2),box-shadow .35s;
+  will-change:transform;
+}
+.rv:hover{
+  border-color:rgba(204,0,0,.3);
+  background:rgba(204,0,0,.03);
+  transform:translateY(-4px) perspective(600px) rotateX(2deg);
+  box-shadow:0 24px 60px rgba(0,0,0,.5),0 0 30px rgba(204,0,0,.08);
+}
+.rv-stars{color:var(--red);letter-spacing:3px;font-size:.88rem;margin-bottom:16px;}
+.rv-text{
+  font-family:'DM Serif Display',serif;font-style:italic;
+  font-size:1.08rem;line-height:1.65;color:rgba(255,255,255,.85);
+  margin-bottom:18px;
+}
+.rv-who{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:#333;}
+
+/* ══════════════════════════════════════════════════════════════
+   LOCATIONS — editorial stacked listing
+══════════════════════════════════════════════════════════════ */
+#areas{background:var(--off);padding:120px 0;}
+.ar-head{margin-bottom:72px;}
+.ar-head h2{color:var(--white);}
+.ar-head p{color:rgba(255,255,255,.35);margin-top:10px;}
+.ar-list{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  border-top:1px solid rgba(255,255,255,.06);
+}
+.ar-item{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:22px 0;
+  border-bottom:1px solid rgba(255,255,255,.06);
+  overflow:hidden;position:relative;
+  transition:background .2s;
+}
+.ar-item:nth-child(odd){padding-right:40px;}
+.ar-item:nth-child(even){padding-left:40px;border-left:1px solid rgba(255,255,255,.06);}
+.ar-item::before{
+  content:'';position:absolute;left:0;bottom:0;height:1px;width:0;
+  background:var(--red);transition:width .35s cubic-bezier(.22,.68,0,1.2);
+}
+.ar-item:hover::before{width:100%;}
+.ar-item:hover{background:rgba(255,255,255,.02);}
+.ar-name{
+  font-family:'DM Serif Display',serif;
+  font-size:clamp(1.1rem,2vw,1.6rem);
+  color:rgba(255,255,255,.7);
+  transition:color .2s;
+}
+.ar-item:hover .ar-name{color:var(--white);}
+.ar-state{
+  font-family:'DM Mono',monospace;font-size:.6rem;
+  letter-spacing:.14em;text-transform:uppercase;color:#333;
+  transition:color .2s;
+}
+.ar-item:hover .ar-state{color:var(--red);}
+.ar-arrow{color:#222;transition:color .2s,transform .2s;}
+.ar-item:hover .ar-arrow{color:var(--red);transform:translateX(4px);}
+@media(max-width:700px){
+  .ar-list{grid-template-columns:1fr;}
+  .ar-item:nth-child(even){padding-left:0;border-left:none;}
+  .ar-item:nth-child(odd){padding-right:0;}
+}
+
+/* ══════════════════════════════════════════════════════════════
+   CTA BAND
+══════════════════════════════════════════════════════════════ */
+#cta{position:relative;height:480px;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center;}
+#cta img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.18);will-change:transform;transform:scale(1.06);}
+#cta::after{
+  content:'';position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 50%,rgba(204,0,0,.14),transparent 70%),
+    linear-gradient(to bottom,rgba(8,8,8,.4),rgba(8,8,8,.6));
+}
+.cta-body{position:relative;z-index:2;padding:0 24px;}
+.cta-body h2{color:var(--white);font-size:clamp(2rem,4vw,3.4rem);}
+.cta-body p{color:rgba(255,255,255,.45);margin-top:10px;}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px;}
+
+/* ══════════════════════════════════════════════════════════════
+   QUOTE — full-bleed dark, form centered with map behind glass
+══════════════════════════════════════════════════════════════ */
+#quote{
+  position:relative;
+  background:var(--off);
+  padding:120px 0;
+  overflow:hidden;
+}
+/* subtle map as background atmosphere */
+#q-map-bg{
+  position:absolute;inset:0;z-index:1;opacity:.08;
+  pointer-events:none;
+}
+#q-map-bg iframe{width:100%;height:100%;border:0;filter:grayscale(1) contrast(.7);pointer-events:none;}
+.q-inner{
+  position:relative;z-index:2;
+  max-width:900px;margin:0 auto;padding:0 48px;
+}
+@media(max-width:600px){.q-inner{padding:0 20px;}}
+.q-head{text-align:center;margin-bottom:52px;}
+.q-head h2{color:var(--white);}
+.q-head p{color:rgba(255,255,255,.35);margin-top:10px;}
+/* glassmorphism form card */
+.qcard{
+  background:rgba(255,255,255,.04);
+  backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:6px;padding:48px 44px;
+}
+@media(max-width:600px){.qcard{padding:32px 20px;}}
+.qform{display:flex;flex-direction:column;gap:14px;}
+.qrow{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+@media(max-width:540px){.qrow{grid-template-columns:1fr;}}
+.qfull{grid-column:1/-1;}
+.fg label{
+  display:block;font-family:'DM Mono',monospace;font-size:.6rem;
+  letter-spacing:.16em;text-transform:uppercase;color:#555;margin-bottom:7px;
+}
+.fg input,.fg select,.fg textarea{
+  width:100%;padding:14px 16px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:2px;
+  font-family:'DM Sans',sans-serif;font-size:.95rem;color:var(--white);
+  transition:border-color .18s,background .18s,box-shadow .18s;
+  -webkit-appearance:none;
+}
+.fg input::placeholder,.fg textarea::placeholder{color:rgba(255,255,255,.18);}
+.fg input:focus,.fg select:focus,.fg textarea:focus{
+  outline:none;border-color:var(--red);
+  background:rgba(204,0,0,.05);
+  box-shadow:0 0 0 3px rgba(204,0,0,.12);
+}
+.fg select option{background:#111;color:var(--white);}
+.fg textarea{resize:vertical;min-height:110px;}
+.qsubmit{text-align:center;margin-top:6px;}
+.qsubmit .btn{padding:15px 40px;font-size:1rem;}
+
+/* ══════════════════════════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════════════════════════ */
+footer{
+  background:#040404;border-top:1px solid rgba(204,0,0,.2);
+  padding:80px 0 0;
+}
+.foot-g{
+  display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;
+  gap:40px;padding-bottom:56px;
+}
+@media(max-width:900px){.foot-g{grid-template-columns:1fr 1fr;}}
+@media(max-width:500px){.foot-g{grid-template-columns:1fr;}}
+.fn{font-family:'DM Serif Display',serif;font-size:1.45rem;color:var(--white);margin-bottom:10px;}
+.ft{font-size:.88rem;color:#2a2a2a;max-width:220px;line-height:1.7;}
+.fl{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:#1e1e1e;margin-top:14px;}
+footer h4{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:#2a2a2a;margin-bottom:16px;}
+footer a{display:block;font-size:.88rem;color:#3a3a3a;margin-bottom:10px;transition:color .15s;}
+footer a:hover{color:var(--white);}
+.fb{border-top:1px solid rgba(255,255,255,.04);padding:22px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:#222;}
+
+:focus-visible{outline:2px solid var(--red);outline-offset:3px;}
+</style>
 </head>
 <body>
 
 <canvas id="grain" aria-hidden="true"></canvas>
-<div id="scroll-bar" aria-hidden="true"></div>
-<div id="cursor-dot" aria-hidden="true"></div>
-<div id="cursor-ring" aria-hidden="true"></div>
-<div id="cursor-label" aria-hidden="true"></div>
-<header class="site-header" id="site-header">
-  <a href="index.html" class="logo" aria-label="Freedom Group Construction home">
-    <svg class="logo-mark" viewBox="0 0 36 36" fill="none" aria-hidden="true">
-  <rect width="36" height="36" rx="3" fill="#CC0000"/>
-  <rect width="36" height="36" rx="3" fill="url(#ls)"/>
-  <defs>
-    <linearGradient id="ls" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#fff" stop-opacity=".22"/>
-      <stop offset="48%" stop-color="#fff" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#000" stop-opacity=".16"/>
-    </linearGradient>
-  </defs>
-  <path d="M18 4.5 9 9v7.8c0 6.8 5.2 11.5 9 13.2 3.8-1.7 9-6.4 9-13.2V9z" fill="white" opacity=".96"/>
-  <path d="M18 7 11 11v5.7c0 5.6 3.9 9.5 7 10.8 3.1-1.3 7-5.2 7-10.8V11z" fill="#CC0000"/>
-  <polygon points="18,9.5 19.5,14 24,14 20.5,16.7 21.8,21.2 18,18.6 14.2,21.2 15.5,16.7 12,14 16.5,14" fill="white"/>
-</svg>
+<div id="progress" aria-hidden="true"></div>
+<div id="c-dot" aria-hidden="true"></div>
+<div id="c-ring" aria-hidden="true"></div>
+<div id="c-label" aria-hidden="true"></div>
+
+<!-- INTRO -->
+<div id="intro" role="presentation" aria-hidden="true">
+  <div id="intro-scan"></div>
+  <div id="intro-id">
+    Freedom Group Construction
+    <small>Unlimited General Contractor · Charlotte, NC</small>
+  </div>
+  <button id="intro-skip">Skip</button>
+</div>
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <a href="#" class="logo" aria-label="Freedom Group Construction">
+    <svg viewBox="0 0 36 36" fill="none" aria-hidden="true">
+      <rect width="36" height="36" rx="3" fill="#CC0000"/>
+      <rect width="36" height="36" rx="3" fill="url(#sh)"/>
+      <defs><linearGradient id="sh" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#fff" stop-opacity=".22"/><stop offset="48%" stop-color="#fff" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity=".16"/></linearGradient></defs>
+      <path d="M18 4.5 9 9v7.8c0 6.8 5.2 11.5 9 13.2 3.8-1.7 9-6.4 9-13.2V9z" fill="white" opacity=".96"/>
+      <path d="M18 7 11 11v5.7c0 5.6 3.9 9.5 7 10.8 3.1-1.3 7-5.2 7-10.8V11z" fill="#CC0000"/>
+      <polygon points="18,9.5 19.5,14 24,14 20.5,16.7 21.8,21.2 18,18.6 14.2,21.2 15.5,16.7 12,14 16.5,14" fill="white"/>
+    </svg>
     <div>
       <span class="logo-name">Freedom Group Construction</span>
       <span class="logo-sub">Unlimited GC · Charlotte, NC</span>
     </div>
   </a>
-  <nav class="main-nav" aria-label="Primary">
-    <a href="index.html#portfolio">Work</a>
-      <a href="index.html#services">Services</a>
-      <a href="index.html#about">About</a>
-      <a href="index.html#areas">Service Areas</a>
+  <nav class="nav">
+    <a href="#portfolio" data-cursor="Work">Work</a>
+    <a href="#services" data-cursor="Services">Services</a>
+    <a href="#about" data-cursor="About">About</a>
+    <a href="#areas" data-cursor="Areas">Service Areas</a>
   </nav>
-  <div class="hdr-right">
-    <a href="tel:7047777850" class="hdr-phone"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.7-.37 1.05-.24 1.1.4 2.3.7 3.55.7.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C7.61 21 3 16.39 3 11c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.32.03.7-.27.93z"/></svg> (704) 777-7850</a>
-    <a href="index.html#quote" class="btn btn-red" data-cursor="Quote">Free Quote <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
-    <button class="hamburger" id="hbg" aria-label="Open menu" aria-expanded="false" aria-controls="mob-nav">
+  <div class="hdr-r">
+    <a href="tel:7047777850" class="hdr-ph">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.7-.37 1.05-.24 1.1.4 2.3.7 3.55.7.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C7.61 21 3 16.39 3 11c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.32.03.7-.27.93z"/></svg>
+      (704) 777-7850
+    </a>
+    <a href="#quote" class="btn btn-r" data-cursor="Quote">
+      Free Quote
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+    </a>
+    <button class="burger" id="hbg" aria-label="Open menu" aria-expanded="false" aria-controls="mob">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
-<nav class="mobile-menu" id="mob-nav" aria-label="Mobile">
+
+<nav class="mob" id="mob" aria-label="Mobile">
   <nav>
-    <a href="index.html#portfolio">Work</a>
-    <a href="index.html#services">Services</a>
-    <a href="index.html#about">About</a>
-    <a href="index.html#areas">Service Areas</a>
+    <a href="#portfolio">Work</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#areas">Service Areas</a>
   </nav>
   <div class="mob-cta">
-    <a href="tel:7047777850" class="btn btn-outline"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.7-.37 1.05-.24 1.1.4 2.3.7 3.55.7.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C7.61 21 3 16.39 3 11c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.32.03.7-.27.93z"/></svg> (704) 777-7850</a>
-    <a href="index.html#quote" class="btn btn-red">Free Quote <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
+    <a href="tel:7047777850" class="btn btn-g">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.7-.37 1.05-.24 1.1.4 2.3.7 3.55.7.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C7.61 21 3 16.39 3 11c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.32.03.7-.27.93z"/></svg>
+      (704) 777-7850
+    </a>
+    <a href="#quote" class="btn btn-r">Free Quote →</a>
   </div>
 </nav>
 
-<!-- ══ INTRO ═══════════════════════════════════════════════════════════ -->
-<div id="intro" role="presentation" aria-hidden="true">
-  <div id="intro-line"></div>
-  <div id="intro-logo">
-    Freedom Group Construction
-    <span>Unlimited General Contractor · Charlotte, NC</span>
-  </div>
-  <button id="intro-skip">Skip</button>
-</div>
-
-<!-- ══ HERO ═════════════════════════════════════════════════════════════ -->
+<!-- HERO -->
 <section id="hero" aria-label="Hero">
-  <canvas id="hero-canvas" aria-hidden="true"></canvas>
-
-  <div id="lyr-bg" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1400&q=85')"></div>
-  <div id="lyr-vignette" aria-hidden="true"></div>
-  <div id="lyr-glow" aria-hidden="true"></div>
-
-  <div id="lyr-photo" aria-hidden="true">
-    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1400&q=85" alt="Construction planning and blueprints" loading="eager">
+  <canvas id="hc" aria-hidden="true"></canvas>
+  <div class="lyr" id="lbg" aria-hidden="true"></div>
+  <div class="lyr" id="lvg" aria-hidden="true"></div>
+  <div class="lyr" id="lg"  aria-hidden="true"></div>
+  <div id="lp" aria-hidden="true">
+    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1400&q=85" alt="Construction planning" loading="eager">
   </div>
-
-  <div id="lyr-copy">
-    <span class="eyebrow h-hide">Freedom Group Construction · Charlotte, NC &amp; Surrounding Metro</span>
-    <h1 class="h-hide">
-      Built right.<br><em>Licensed</em><br>for everything.
-    </h1>
-    <p class="lede h-hide">An unlimited GC license means no scope is off-limits. New builds, full renovations, structural repairs — one license, one crew, one timeline.</p>
-    <div class="hero-btns h-hide">
-      <a href="#quote" class="btn btn-red" data-cursor="Quote">Free Quote <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
-      <a href="#portfolio" class="btn btn-outline" data-cursor="Work">View Our Work <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
+  <div id="lcopy">
+    <span class="eyebrow hv">Freedom Group Construction · Charlotte, NC</span>
+    <h1 class="hv">Built right.<br><em>Licensed</em><br>for everything.</h1>
+    <p class="sub hv">An unlimited GC license means no scope is off-limits. New builds, full renovations, structural repairs — one license, one crew, one timeline.</p>
+    <div class="hbtns hv">
+      <a href="#quote" class="btn btn-r" data-cursor="Quote">Free Quote <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
+      <a href="#portfolio" class="btn btn-g" data-cursor="Work">View Our Work <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
     </div>
   </div>
-
-  <div id="hero-stats">
-    <div class="stat-blk">
-      <span class="stat-n">Unlimited</span>
-      <span class="stat-l">License Classification</span>
-    </div>
-    <div class="stat-blk">
-      <span class="stat-n" data-count="16" data-dur="1200">16</span>
-      <span class="stat-l">Communities Served</span>
-    </div>
-    <div class="stat-blk">
-      <span class="stat-n" data-count="100" data-suffix="%" data-dur="900">100%</span>
-      <span class="stat-l">Licensed &amp; Insured</span>
-    </div>
-    <div class="stat-blk">
-      <span class="stat-n">Free</span>
-      <span class="stat-l">Written Quotes</span>
-    </div>
+  <div id="hstats">
+    <div class="sb"><span class="sn">Unlimited</span><span class="sl">License Classification</span></div>
+    <div class="sb"><span class="sn" data-count="16" data-dur="1200">16</span><span class="sl">Communities Served</span></div>
+    <div class="sb"><span class="sn" data-count="100" data-sfx="%" data-dur="900">100%</span><span class="sl">Licensed &amp; Insured</span></div>
+    <div class="sb"><span class="sn">Free</span><span class="sl">Written Quotes</span></div>
   </div>
-
-  <div id="scroll-hint" class="h-hide">
+  <div id="shint" class="hv" aria-hidden="true">
     <span>Scroll</span>
-    <div id="sh-line"></div>
+    <div id="shl"></div>
   </div>
 </section>
 
-<!-- ══ SERVICES (light white) ═══════════════════════════════════════════ -->
-<section class="sect sect--light" id="services">
-  <div class="wrap">
-    <div class="sect-head center" data-reveal="far">
-      <span class="eyebrow">What We Build</span>
-      <h2>Full-scope general contracting</h2>
-      <p class="lede">An unlimited license means we can permit it, build it, and finish it — without farming out the parts that matter most.</p>
+<!-- SERVICES -->
+<section id="services">
+  <div class="svcs-head" data-s="f">
+    <span class="eyebrow">What We Build</span>
+    <h2>Full-scope general contracting</h2>
+    <p>An unlimited license means we can permit it, build it, and finish it without farming out the hard parts.</p>
+  </div>
+  <div class="svc-list">
+    <div class="svc-row" data-s data-d="0" data-cursor="Explore">
+      <div class="svc-row-l" data-n="01">
+        <h3>New Home Construction</h3>
+        <p>Custom homes built from the ground up — permits, trades, and timeline under one license. From site prep through final walkthrough.</p>
+        <span class="svc-more">Learn more <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
+      </div>
+      <div class="svc-row-r">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80" alt="Custom home build Charlotte NC" loading="lazy">
+      </div>
     </div>
-    <div class="svc-grid">
-  <a href="services/new-home-construction.html" class="svc-card" data-cursor="Explore" data-reveal data-delay="0">
-    <span class="svc-num">01</span>
-    <div class="svc-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></div>
-    <h3>New Home Construction</h3>
-    <p>Custom homes built from the ground up — permits, trades, and timeline under one license.</p>
-    <span class="svc-link">Learn more <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
-  </a>
-  <a href="services/home-additions.html" class="svc-card" data-cursor="Explore" data-reveal data-delay="70">
-    <span class="svc-num">02</span>
-    <div class="svc-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 4h7V2H2v9h2zm-2 9H0v9h9v-2H4l5-5-1-2-5 5zm18-9h-5V2h-2v9h9V9h-2zm-4 12l-5-5-2 1 5 5H9v2h9v-9h-2z"/></svg></div>
-    <h3>Home Additions</h3>
-    <p>Second stories, in-law suites, room additions — tied seamlessly into your existing structure.</p>
-    <span class="svc-link">Learn more <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
-  </a>
-  <a href="services/full-renovations.html" class="svc-card" data-cursor="Explore" data-reveal data-delay="140">
-    <span class="svc-num">03</span>
-    <div class="svc-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.5 2.1L13 4.6l1 1-7.7 7.7-1-1-2.5 2.5 4.9 4.9 2.5-2.5-1-1 7.7-7.7 1 1 2.5-2.5zM2 17l-1 4 4-1z"/></svg></div>
-    <h3>Full Renovations</h3>
-    <p>Whole-home gut remodels and open-concept conversions — demo through finish, one crew.</p>
-    <span class="svc-link">Learn more <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
-  </a>
-  <a href="services/kitchen-bath-remodeling.html" class="svc-card" data-cursor="Explore" data-reveal data-delay="210">
-    <span class="svc-num">04</span>
-    <div class="svc-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2.5v9c0 1.8-1.2 3.3-3 3.8V22h-2v-6.7c-1.8-.5-3-2-3-3.8v-9h2v5.5h1V2.5h2v5.5h1V2.5zM7 2C4.2 3 3 5.7 3 9c0 2.4 1.2 4.4 3 5.4V22h2V14.4c1.8-1 3-3 3-5.4 0-3.3-1.2-6-4-7z"/></svg></div>
-    <h3>Kitchen & Bath Remodeling</h3>
-    <p>The two rooms that sell houses — plumbing, electrical, tile and cabinetry in sequence.</p>
-    <span class="svc-link">Learn more <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
-  </a>
-  <a href="services/decks-outdoor-living.html" class="svc-card" data-cursor="Explore" data-reveal data-delay="280">
-    <span class="svc-num">05</span>
-    <div class="svc-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 20h20v2H2zm2-2V9.5l8-5.5 8 5.5V18h-4v-8H8v8zm6 0h4v-6h-4z"/></svg></div>
-    <h3>Decks & Outdoor Living</h3>
-    <p>Decks, porches and outdoor structures — proper footings, correct flashing, built to code.</p>
-    <span class="svc-link">Learn more <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
-  </a>
-  <a href="services/roofing-structural-repairs.html" class="svc-card" data-cursor="Explore" data-reveal data-delay="350">
-    <span class="svc-num">06</span>
-    <div class="svc-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3L2 12h2v9h7v-5h2v5h7v-9h2zm0 2.5l7 6V19h-3v-5H8v5H5v-7.5z"/></svg></div>
-    <h3>Roofing & Structural Repairs</h3>
-    <p>Roof replacement and structural fixes handled directly under our unlimited license.</p>
-    <span class="svc-link">Learn more <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
-  </a>
+    <div class="svc-row" data-s data-d="60" data-cursor="Explore">
+      <div class="svc-row-l" data-n="02">
+        <h3>Home Additions</h3>
+        <p>Second stories, in-law suites, room additions — engineered to tie seamlessly into your existing roofline, foundation, and systems.</p>
+        <span class="svc-more">Learn more <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
+      </div>
+      <div class="svc-row-r">
+        <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=80" alt="Home addition Charlotte NC" loading="lazy">
+      </div>
+    </div>
+    <div class="svc-row" data-s data-d="120" data-cursor="Explore">
+      <div class="svc-row-l" data-n="03">
+        <h3>Full Renovations</h3>
+        <p>Whole-home gut remodels and open-concept conversions — demo through finish under one contract. No coordinating five different contractors.</p>
+        <span class="svc-more">Learn more <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
+      </div>
+      <div class="svc-row-r">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Full home renovation Charlotte NC" loading="lazy">
+      </div>
+    </div>
+    <div class="svc-row" data-s data-d="0" data-cursor="Explore">
+      <div class="svc-row-l" data-n="04">
+        <h3>Kitchen &amp; Bath Remodeling</h3>
+        <p>The two rooms that sell houses. We coordinate plumbing, electrical, tile, and cabinetry in sequence — nothing gets out of order.</p>
+        <span class="svc-more">Learn more <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
+      </div>
+      <div class="svc-row-r">
+        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80" alt="Kitchen bathroom remodel Charlotte NC" loading="lazy">
+      </div>
+    </div>
+    <div class="svc-row" data-s data-d="60" data-cursor="Explore">
+      <div class="svc-row-l" data-n="05">
+        <h3>Decks &amp; Outdoor Living</h3>
+        <p>Proper footings, correct flashing, code-compliant framing. Built to pass inspection and hold up for decades — not bolted on as an afterthought.</p>
+        <span class="svc-more">Learn more <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
+      </div>
+      <div class="svc-row-r">
+        <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?w=800&q=80" alt="Deck porch outdoor living Charlotte NC" loading="lazy">
+      </div>
+    </div>
+    <div class="svc-row" data-s data-d="120" data-cursor="Explore">
+      <div class="svc-row-l" data-n="06">
+        <h3>Roofing &amp; Structural Repairs</h3>
+        <p>Roof replacement and structural fixes handled directly under our unlimited license. No chain of specialty subs — we own the scope.</p>
+        <span class="svc-more">Learn more <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
+      </div>
+      <div class="svc-row-r">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80" alt="Roofing structural repair Charlotte NC" loading="lazy">
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ══ PORTFOLIO (warm surface) ══════════════════════════════════════════ -->
-<section class="sect sect--surface" id="portfolio">
+<!-- PORTFOLIO -->
+<section id="portfolio">
   <div class="wrap">
-    <div class="sect-head" data-reveal="far">
+    <div class="ph" data-s="f">
       <span class="eyebrow">Recent Work</span>
       <h2>Projects across the Charlotte metro</h2>
+      <p>Placeholder images — real project photos replace these at launch.</p>
     </div>
-    <div class="port-grid">
-  <div class="port-item port-wide" data-reveal="port" data-delay="0">
-    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=85" alt="Modern Kitchen Renovation — Ballantyne, NC" loading="lazy">
-    <div class="port-label"><h4>Modern Kitchen Renovation</h4><span class="port-type">Kitchen & Bath · Ballantyne, NC</span></div>
-  </div>
-  <div class="port-item" data-reveal="port" data-delay="80">
-    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=700&q=80" alt="Custom Home Build — Mooresville, NC" loading="lazy">
-    <div class="port-label"><h4>Custom Home Build</h4><span class="port-type">New Construction · Mooresville, NC</span></div>
-  </div>
-  <div class="port-item" data-reveal="port" data-delay="160">
-    <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=700&q=80" alt="Open Concept Renovation — Fort Mill, SC" loading="lazy">
-    <div class="port-label"><h4>Open Concept Renovation</h4><span class="port-type">Full Renovation · Fort Mill, SC</span></div>
-  </div>
-  <div class="port-item" data-reveal="port" data-delay="0">
-    <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?w=700&q=80" alt="Master Suite Addition — Matthews, NC" loading="lazy">
-    <div class="port-label"><h4>Master Suite Addition</h4><span class="port-type">Home Addition · Matthews, NC</span></div>
-  </div>
-  <div class="port-item" data-reveal="port" data-delay="80">
-    <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?w=700&q=80" alt="Covered Deck & Porch — Lake Wylie, SC" loading="lazy">
-    <div class="port-label"><h4>Covered Deck & Porch</h4><span class="port-type">Outdoor Living · Lake Wylie, SC</span></div>
-  </div>
-  <div class="port-item" data-reveal="port" data-delay="160">
-    <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=700&q=80" alt="Primary Bath Remodel — Huntersville, NC" loading="lazy">
-    <div class="port-label"><h4>Primary Bath Remodel</h4><span class="port-type">Kitchen & Bath · Huntersville, NC</span></div>
-  </div>
+    <div class="pgrid">
+      <div class="pi" data-s="p" data-d="0" data-cursor="View">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1000&q=85" alt="Modern Kitchen Renovation — Ballantyne" loading="lazy">
+        <div class="plab"><h4>Modern Kitchen Renovation</h4><span class="pt">Kitchen &amp; Bath · Ballantyne, NC</span></div>
+      </div>
+      <div class="pi" data-s="p" data-d="80" data-cursor="View">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=700&q=80" alt="Custom Home Build — Mooresville" loading="lazy">
+        <div class="plab"><h4>Custom Home Build</h4><span class="pt">New Construction · Mooresville, NC</span></div>
+      </div>
+      <div class="pi" data-s="p" data-d="0" data-cursor="View">
+        <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=700&q=80" alt="Open Concept Renovation — Fort Mill" loading="lazy">
+        <div class="plab"><h4>Open Concept Renovation</h4><span class="pt">Full Renovation · Fort Mill, SC</span></div>
+      </div>
+      <div class="pi" data-s="p" data-d="80" data-cursor="View">
+        <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?w=700&q=80" alt="Master Suite Addition — Matthews" loading="lazy">
+        <div class="plab"><h4>Master Suite Addition</h4><span class="pt">Home Addition · Matthews, NC</span></div>
+      </div>
+      <div class="pi" data-s="p" data-d="0" data-cursor="View">
+        <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?w=700&q=80" alt="Covered Deck & Porch — Lake Wylie" loading="lazy">
+        <div class="plab"><h4>Covered Deck &amp; Porch</h4><span class="pt">Outdoor Living · Lake Wylie, SC</span></div>
+      </div>
+      <div class="pi" data-s="p" data-d="80" data-cursor="View">
+        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=700&q=80" alt="Primary Bath Remodel — Huntersville" loading="lazy">
+        <div class="plab"><h4>Primary Bath Remodel</h4><span class="pt">Kitchen &amp; Bath · Huntersville, NC</span></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ══ ABOUT (dark cinematic) ════════════════════════════════════════════ -->
-<div class="about-wrap" id="about">
-  <div class="about-img">
-    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=85" alt="Freedom Group Construction — general contractor team on site" loading="lazy" data-parallax="0.22">
-  </div>
-  <div class="about-copy">
-    <span class="eyebrow">About Us</span>
-    <h2 data-reveal="far">The license that lets us do the job right —<br><em>not the workaround.</em></h2>
-    <p data-reveal data-delay="100">Most contractors are limited to cosmetic work and must bring in separate licensed subs the moment a project touches structural, electrical, or plumbing systems. We hold an unlimited general contractor license — meaning we manage those pieces directly.</p>
-    <p data-reveal data-delay="160">No markup chain. No coordination gaps. No waiting on the next contractor to show up.</p>
-    <div class="cred-row" data-reveal data-delay="220">
-      <div class="cred-cell"><div class="cred-n">Unlimited</div><div class="cred-l">License Class</div></div>
-      <div class="cred-cell"><div class="cred-n">16</div><div class="cred-l">Metro Areas</div></div>
-      <div class="cred-cell"><div class="cred-n">6</div><div class="cred-l">Service Lines</div></div>
-      <div class="cred-cell"><div class="cred-n">100%</div><div class="cred-l">Insured</div></div>
+<!-- ABOUT -->
+<section id="about">
+  <div id="about-bg" data-parallax=".22" aria-hidden="true"></div>
+  <div class="about-inner">
+    <div class="about-l">
+      <span class="eyebrow">About Us</span>
+      <h2 data-s="f">The license that lets us do the job right —<br><em>not the workaround.</em></h2>
+      <p data-s data-d="100">Most contractors are limited to cosmetic work and must bring in separate licensed subs the moment a project touches structural, electrical, or plumbing systems.</p>
+      <p data-s data-d="160">We hold an unlimited general contractor license — meaning we manage those pieces directly. No markup chain. No coordination gaps. No waiting on the next contractor to show up.</p>
+      <p data-s data-d="200">We're focused on residential renovation and new construction across the Charlotte metro, with commercial GC capacity coming as we grow.</p>
+      <div class="about-btns" data-s data-d="260">
+        <a href="#quote" class="btn btn-r" data-cursor="Quote">Start Your Project <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
+        <a href="tel:7047777850" class="btn btn-g" data-cursor="Call">(704) 777-7850</a>
+      </div>
     </div>
-    <div class="about-actions" data-reveal data-delay="280">
-      <a href="#quote" class="btn btn-red" data-cursor="Quote">Start Your Project <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
-      <a href="tel:7047777850" class="btn btn-outline" data-cursor="Call"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.7-.37 1.05-.24 1.1.4 2.3.7 3.55.7.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C7.61 21 3 16.39 3 11c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.32.03.7-.27.93z"/></svg> (704) 777-7850</a>
+    <div class="cred-panel" data-s data-d="80">
+      <h3>Unlimited General Contractor License — NC</h3>
+      <div class="cred-grid">
+        <div class="cred"><div class="cred-n">Unlimited</div><div class="cred-l">License Class</div></div>
+        <div class="cred"><div class="cred-n" data-count="16" data-dur="1000">16</div><div class="cred-l">Metro Areas</div></div>
+        <div class="cred"><div class="cred-n">6</div><div class="cred-l">Service Lines</div></div>
+        <div class="cred"><div class="cred-n" data-count="100" data-sfx="%" data-dur="800">100%</div><div class="cred-l">Insured</div></div>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- ══ PROCESS (dark) ════════════════════════════════════════════════════ -->
-<section class="sect sect--dark">
+<!-- PROCESS -->
+<section id="process">
   <div class="wrap">
-    <div class="sect-head center" data-reveal="far">
+    <div class="proc-head" data-s="f">
       <span class="eyebrow">How It Works</span>
       <h2>From first call to final walkthrough</h2>
+      <p>A clear four-step process so you always know where your project stands.</p>
     </div>
-    <div class="process-grid">
-      <div class="process-panel" data-reveal data-delay="0" data-cursor="Read">
-        <span class="process-num">01</span>
-        <h4>Free Quote</h4>
-        <p>We schedule a walkthrough and deliver a written quote — no obligation, no pressure.</p>
-      </div>
-      <div class="process-panel" data-reveal data-delay="100" data-cursor="Read">
-        <span class="process-num">02</span>
-        <h4>Scope &amp; Permit</h4>
-        <p>We finalize scope, pull required permits, and lock a realistic timeline before work starts.</p>
-      </div>
-      <div class="process-panel" data-reveal data-delay="200" data-cursor="Read">
-        <span class="process-num">03</span>
-        <h4>Build</h4>
-        <p>Our crews execute in sequence under our license — no gaps waiting on the next contractor.</p>
-      </div>
-      <div class="process-panel" data-reveal data-delay="300" data-cursor="Read">
-        <span class="process-num">04</span>
-        <h4>Walkthrough</h4>
-        <p>Final walkthrough, punch-list resolution, and inspection sign-off before we call it done.</p>
+    <div class="timeline">
+      <div class="tl-line"><div class="tl-fill" id="tlfill"></div></div>
+      <div class="tl-steps" id="tlsteps">
+        <div class="tl-step">
+          <span class="tl-num">01</span>
+          <div class="tl-dot"></div>
+          <h4>Free Quote</h4>
+          <p>We schedule a walkthrough and deliver a written quote — no obligation, no pressure.</p>
+        </div>
+        <div class="tl-step">
+          <span class="tl-num">02</span>
+          <div class="tl-dot"></div>
+          <h4>Scope &amp; Permit</h4>
+          <p>We finalize scope, pull required permits, and lock a realistic timeline before work starts.</p>
+        </div>
+        <div class="tl-step">
+          <span class="tl-num">03</span>
+          <div class="tl-dot"></div>
+          <h4>Build</h4>
+          <p>Our crews execute in sequence under our license — no gaps waiting on the next contractor.</p>
+        </div>
+        <div class="tl-step">
+          <span class="tl-num">04</span>
+          <div class="tl-dot"></div>
+          <h4>Walkthrough</h4>
+          <p>Final walkthrough, punch-list resolution, and inspection sign-off before we call it done.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ REVIEWS (light white) ═════════════════════════════════════════════ -->
-<section class="sect sect--light">
+<!-- REVIEWS -->
+<section id="reviews">
   <div class="wrap">
-    <div class="sect-head center" data-reveal="far">
+    <div class="rv-head" data-s="f">
       <span class="eyebrow">Client Reviews</span>
       <h2>What homeowners say</h2>
     </div>
-    <div class="reviews-grid">
-      <div class="review-card" data-reveal data-delay="0" data-cursor="Read">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"They handled our addition from permit to final inspection without us managing a single sub. That alone was worth every dollar."</p>
-        <span class="review-who">Homeowner · Ballantyne, NC</span>
+    <div class="rv-grid">
+      <div class="rv" data-s data-d="0" data-cursor="Read">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"They handled our addition from permit to final inspection without us managing a single sub. That alone was worth every dollar."</p>
+        <span class="rv-who">Homeowner · Ballantyne, NC</span>
       </div>
-      <div class="review-card" data-reveal data-delay="100" data-cursor="Read">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Our kitchen remodel finished on the timeline we were quoted. Communication was clear the entire way through."</p>
-        <span class="review-who">Homeowner · Fort Mill, SC</span>
+      <div class="rv" data-s data-d="100" data-cursor="Read">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"Our kitchen remodel finished on the timeline we were quoted. Communication was clear the entire way through — rare in this industry."</p>
+        <span class="rv-who">Homeowner · Fort Mill, SC</span>
       </div>
-      <div class="review-card" data-reveal data-delay="200" data-cursor="Read">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Needed structural repair work most contractors wouldn't touch. They scoped it and handled everything under one contract."</p>
-        <span class="review-who">Homeowner · Concord, NC</span>
+      <div class="rv" data-s data-d="200" data-cursor="Read">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"Needed structural repair work most contractors wouldn't touch without three separate specialists. They scoped it and handled everything under one contract."</p>
+        <span class="rv-who">Homeowner · Concord, NC</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ PHOTO BANNER CTA ══════════════════════════════════════════════════ -->
-<div class="photo-banner">
-  <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&q=80" alt="Charlotte NC construction project" loading="lazy" data-parallax="0.18">
-  <div class="banner-body">
-    <h2 data-reveal="far">Ready to start your project?</h2>
-    <p data-reveal data-delay="80">Free written quotes. No pressure.</p>
-    <div class="banner-btns" data-reveal data-delay="160">
-      <a href="tel:7047777850" class="btn btn-red" data-cursor="Call"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.7-.37 1.05-.24 1.1.4 2.3.7 3.55.7.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C7.61 21 3 16.39 3 11c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.32.03.7-.27.93z"/></svg> (704) 777-7850</a>
-      <a href="#quote" class="btn btn-outline" data-cursor="Quote">Request a Quote <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
+<!-- CTA BAND -->
+<div id="cta">
+  <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&q=80" alt="" aria-hidden="true" data-parallax=".16">
+  <div class="cta-body">
+    <h2 data-s="f">Ready to start your project?</h2>
+    <p data-s data-d="80">Free written quotes. No pressure.</p>
+    <div class="cta-btns" data-s data-d="160">
+      <a href="tel:7047777850" class="btn btn-r" data-cursor="Call">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.7-.37 1.05-.24 1.1.4 2.3.7 3.55.7.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C7.61 21 3 16.39 3 11c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.32.03.7-.27.93z"/></svg>
+        (704) 777-7850
+      </a>
+      <a href="#quote" class="btn btn-g" data-cursor="Quote">Request a Quote <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
     </div>
   </div>
 </div>
 
-<!-- ══ LOCATIONS (warm surface) ══════════════════════════════════════════ -->
-<section class="sect sect--surface" id="areas">
+<!-- LOCATIONS -->
+<section id="areas">
   <div class="wrap">
-    <div class="sect-head center" data-reveal="far">
+    <div class="ar-head" data-s="f">
       <span class="eyebrow">Where We Build</span>
       <h2>Serving 16 communities across the Charlotte metro</h2>
-      <p class="lede">From uptown Charlotte to the Lake Wylie shoreline.</p>
+      <p>From uptown Charlotte to the Lake Wylie shoreline — one license, the whole region.</p>
     </div>
-    <div class="loc-grid">
-  <a class="loc-chip" href="locations/charlotte.html" data-reveal data-delay="0" data-cursor="View">Charlotte, NC</a>
-  <a class="loc-chip" href="locations/huntersville.html" data-reveal data-delay="30" data-cursor="View">Huntersville, NC</a>
-  <a class="loc-chip" href="locations/concord.html" data-reveal data-delay="60" data-cursor="View">Concord, NC</a>
-  <a class="loc-chip" href="locations/mooresville.html" data-reveal data-delay="90" data-cursor="View">Mooresville, NC</a>
-  <a class="loc-chip" href="locations/matthews.html" data-reveal data-delay="120" data-cursor="View">Matthews, NC</a>
-  <a class="loc-chip" href="locations/pineville.html" data-reveal data-delay="150" data-cursor="View">Pineville, NC</a>
-  <a class="loc-chip" href="locations/ballantyne.html" data-reveal data-delay="180" data-cursor="View">Ballantyne, NC</a>
-  <a class="loc-chip" href="locations/mount-holly.html" data-reveal data-delay="210" data-cursor="View">Mount Holly, NC</a>
-  <a class="loc-chip" href="locations/gastonia.html" data-reveal data-delay="240" data-cursor="View">Gastonia, NC</a>
-  <a class="loc-chip" href="locations/waxhaw.html" data-reveal data-delay="270" data-cursor="View">Waxhaw, NC</a>
-  <a class="loc-chip" href="locations/stallings.html" data-reveal data-delay="300" data-cursor="View">Stallings, NC</a>
-  <a class="loc-chip" href="locations/indian-trail.html" data-reveal data-delay="330" data-cursor="View">Indian Trail, NC</a>
-  <a class="loc-chip" href="locations/fort-mill.html" data-reveal data-delay="360" data-cursor="View">Fort Mill, SC</a>
-  <a class="loc-chip" href="locations/tega-cay.html" data-reveal data-delay="390" data-cursor="View">Tega Cay, SC</a>
-  <a class="loc-chip" href="locations/lake-wylie.html" data-reveal data-delay="420" data-cursor="View">Lake Wylie, SC</a>
-  <a class="loc-chip" href="locations/rock-hill.html" data-reveal data-delay="450" data-cursor="View">Rock Hill, SC</a>
+    <div class="ar-list" id="arlist"></div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section id="quote">
+  <div id="q-map-bg">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208874.48!2d-80.9799!3d35.2271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sCharlotte%20NC!5e0!3m2!1sen!2sus!4v1700000000"
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Charlotte NC map" aria-hidden="true"></iframe>
+  </div>
+  <div class="q-inner">
+    <div class="q-head" data-s="f">
+      <span class="eyebrow">Get Started</span>
+      <h2>Request your free quote</h2>
+      <p>Fill out the form and we'll follow up to schedule a walkthrough — or call (704) 777-7850 directly.</p>
+    </div>
+    <div class="qcard" data-s data-d="80">
+      <form class="qform" action="https://formspree.io/f/PLACEHOLDER" method="POST">
+        <div class="qrow">
+          <div class="fg"><label for="qn">Full Name *</label><input id="qn" name="name" type="text" placeholder="Jane Smith" required></div>
+          <div class="fg"><label for="qp">Phone *</label><input id="qp" name="phone" type="tel" placeholder="(704) 555-0100" required></div>
+        </div>
+        <div class="qrow">
+          <div class="fg"><label for="qe">Email *</label><input id="qe" name="email" type="email" placeholder="jane@email.com" required></div>
+          <div class="fg"><label for="qz">ZIP Code</label><input id="qz" name="zip" type="text" placeholder="28278"></div>
+        </div>
+        <div class="fg qfull"><label for="qs">Project Type</label>
+          <select id="qs" name="service">
+            <option>New Home Construction</option>
+            <option>Home Additions</option>
+            <option>Full Renovations</option>
+            <option>Kitchen &amp; Bath Remodeling</option>
+            <option>Decks &amp; Outdoor Living</option>
+            <option>Roofing &amp; Structural Repairs</option>
+            <option>Other / Not sure yet</option>
+          </select>
+        </div>
+        <div class="fg qfull"><label for="qd">About your project</label>
+          <textarea id="qd" name="details" placeholder="Brief description — scope, location, timeline…"></textarea>
+        </div>
+        <div class="qsubmit qfull">
+          <button type="submit" class="btn btn-r" data-cursor="Send">
+            Send My Request
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </button>
+        </div>
+      </form>
     </div>
   </div>
 </section>
 
-<!-- ══ QUOTE (dark left / light right) ══════════════════════════════════ -->
-<section class="quote-wrap" id="quote">
-  <div class="quote-left">
-    <span class="eyebrow">Get Started</span>
-    <h2 data-reveal="far">Request your free quote</h2>
-    <p data-reveal data-delay="80">Fill out the form and we'll follow up to schedule a walkthrough — or call (704) 777-7850 directly.</p>
-    <div class="map-wrap" data-reveal data-delay="160">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208874.48!2d-80.9799!3d35.2271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sCharlotte%20NC!5e0!3m2!1sen!2sus!4v1700000000" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        title="Freedom Group Construction service area map" allowfullscreen></iframe>
-    </div>
-  </div>
-  <div class="quote-right" data-reveal data-delay="60">
-    <form class="qform" action="https://formspree.io/f/PLACEHOLDER" method="POST">
-  <div class="qrow">
-    <div class="fg"><label for="qn">Full Name *</label><input id="qn" name="name" type="text" placeholder="Jane Smith" required></div>
-    <div class="fg"><label for="qp">Phone *</label><input id="qp" name="phone" type="tel" placeholder="(704) 555-0100" required></div>
-  </div>
-  <div class="qrow">
-    <div class="fg"><label for="qe">Email *</label><input id="qe" name="email" type="email" placeholder="jane@email.com" required></div>
-    <div class="fg"><label for="qz">ZIP Code</label><input id="qz" name="zip" type="text" placeholder="28278"></div>
-  </div>
-  <div class="fg qfull"><label for="qs">Project Type</label>
-    <select id="qs" name="service">
-      <option>New Home Construction</option>
-      <option>Home Additions</option>
-      <option>Full Renovations</option>
-      <option>Kitchen & Bath Remodeling</option>
-      <option>Decks & Outdoor Living</option>
-      <option>Roofing & Structural Repairs</option>
-      <option>Other / Not sure yet</option>
-    </select>
-  </div>
-  <div class="fg qfull"><label for="qd">About your project</label>
-    <textarea id="qd" name="details" placeholder="Brief description — scope, location, timeline…"></textarea>
-  </div>
-  <div class="qsubmit qfull">
-    <button type="submit" class="btn btn-red" data-cursor="Send">
-      Send My Request <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
-    </button>
-  </div>
-</form>
-  </div>
-</section>
-
+<!-- FOOTER -->
 <footer>
   <div class="wrap">
-    <div class="foot-grid">
+    <div class="foot-g">
       <div>
-        <div class="foot-name">Freedom Group Construction</div>
-        <p class="foot-tagline">Built Right. Licensed for Everything.</p>
-        <p class="foot-lic">Unlimited General Contractor License — NC</p>
+        <div class="fn">Freedom Group Construction</div>
+        <p class="ft">Built Right. Licensed for Everything.</p>
+        <p class="fl">Unlimited General Contractor License — NC</p>
       </div>
-      <div><h4>Services</h4><a href="services/new-home-construction.html">New Home Construction</a>
-    <a href="services/home-additions.html">Home Additions</a>
-    <a href="services/full-renovations.html">Full Renovations</a>
-    <a href="services/kitchen-bath-remodeling.html">Kitchen & Bath Remodeling</a>
-    <a href="services/decks-outdoor-living.html">Decks & Outdoor Living</a>
-    <a href="services/roofing-structural-repairs.html">Roofing & Structural Repairs</a></div>
       <div>
-        <h4>Service Areas</h4><a href="locations/charlotte.html">Charlotte, NC</a>
-    <a href="locations/huntersville.html">Huntersville, NC</a>
-    <a href="locations/concord.html">Concord, NC</a>
-    <a href="locations/mooresville.html">Mooresville, NC</a>
-    <a href="locations/matthews.html">Matthews, NC</a>
-    <a href="locations/pineville.html">Pineville, NC</a>
-    <a href="locations/ballantyne.html">Ballantyne, NC</a>
-    <a href="locations/mount-holly.html">Mount Holly, NC</a>
-        <a href="index.html#areas" style="color:var(--red);">All 16 areas →</a>
+        <h4>Services</h4>
+        <a href="services/new-home-construction.html">New Home Construction</a>
+        <a href="services/home-additions.html">Home Additions</a>
+        <a href="services/full-renovations.html">Full Renovations</a>
+        <a href="services/kitchen-bath-remodeling.html">Kitchen &amp; Bath</a>
+        <a href="services/decks-outdoor-living.html">Decks &amp; Outdoor</a>
+        <a href="services/roofing-structural-repairs.html">Roofing &amp; Structural</a>
+      </div>
+      <div>
+        <h4>Service Areas</h4>
+        <a href="locations/charlotte.html">Charlotte, NC</a>
+        <a href="locations/huntersville.html">Huntersville, NC</a>
+        <a href="locations/concord.html">Concord, NC</a>
+        <a href="locations/mooresville.html">Mooresville, NC</a>
+        <a href="locations/fort-mill.html">Fort Mill, SC</a>
+        <a href="locations/ballantyne.html">Ballantyne, NC</a>
+        <a href="#areas" style="color:#CC0000;">All 16 areas →</a>
       </div>
       <div>
         <h4>Contact</h4>
         <a href="tel:7047777850">(704) 777-7850</a>
-        <a href="index.html#quote">Request a Quote</a>
-        <a href="index.html#about">About Us</a>
+        <a href="#quote">Request a Quote</a>
+        <a href="#about">About Us</a>
       </div>
     </div>
-    <div class="foot-btm">
+    <div class="fb">
       <span>&copy; 2026 Freedom Group Construction. All rights reserved.</span>
       <span>Charlotte, NC &amp; the surrounding metro</span>
     </div>
   </div>
 </footer>
-<script src="effects.js"></script>
 
+<script>
+(function(){
+'use strict';
+var rm = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+/* ── Locations list ─────────────────────────────────────────────────── */
+var LOCS=[
+  {s:'charlotte',n:'Charlotte',st:'NC'},{s:'huntersville',n:'Huntersville',st:'NC'},
+  {s:'concord',n:'Concord',st:'NC'},{s:'mooresville',n:'Mooresville',st:'NC'},
+  {s:'matthews',n:'Matthews',st:'NC'},{s:'pineville',n:'Pineville',st:'NC'},
+  {s:'ballantyne',n:'Ballantyne',st:'NC'},{s:'mount-holly',n:'Mount Holly',st:'NC'},
+  {s:'gastonia',n:'Gastonia',st:'NC'},{s:'waxhaw',n:'Waxhaw',st:'NC'},
+  {s:'stallings',n:'Stallings',st:'NC'},{s:'indian-trail',n:'Indian Trail',st:'NC'},
+  {s:'fort-mill',n:'Fort Mill',st:'SC'},{s:'tega-cay',n:'Tega Cay',st:'SC'},
+  {s:'lake-wylie',n:'Lake Wylie',st:'SC'},{s:'rock-hill',n:'Rock Hill',st:'SC'},
+];
+var al=document.getElementById('arlist');
+if(al){LOCS.forEach(function(l){
+  var a=document.createElement('a');
+  a.href='locations/'+l.s+'.html';
+  a.className='ar-item';
+  a.setAttribute('data-cursor','View');
+  a.innerHTML='<span class="ar-name">'+l.n+'</span><span class="ar-state">'+l.st+' <svg class="ar-arrow" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>';
+  al.appendChild(a);
+});}
+
+/* ── Film grain ─────────────────────────────────────────────────────── */
+(function(){
+  var c=document.getElementById('grain');if(!c)return;
+  var ctx=c.getContext('2d'),W,H,f=0;
+  function rs(){W=c.width=innerWidth;H=c.height=innerHeight;}
+  rs();addEventListener('resize',rs,{passive:true});
+  if(rm)return;
+  (function t(){f++;if(f%3===0){var img=ctx.createImageData(W,H),d=img.data;for(var i=0;i<d.length;i+=4){var v=Math.random()>.5?255:0;d[i]=d[i+1]=d[i+2]=v;d[i+3]=255;}ctx.putImageData(img,0,0);}requestAnimationFrame(t);})();
+})();
+
+/* ── WebGL particles ─────────────────────────────────────────────────── */
+(function(){
+  var c=document.getElementById('hc');if(!c||rm)return;
+  var gl=c.getContext('webgl')||c.getContext('experimental-webgl');if(!gl){c.style.display='none';return;}
+  function rs(){c.width=c.offsetWidth;c.height=c.offsetHeight;gl.viewport(0,0,c.width,c.height);}
+  rs();addEventListener('resize',rs,{passive:true});
+  var VS='attribute vec2 a;attribute float s,al;uniform vec2 r;uniform float t;uniform vec2 m;varying float v;void main(){vec2 p=a;p.y=mod(p.y-t*.032,1.);vec2 d=m/r-p;float dt=length(d);p+=d*.009*smoothstep(.4,0.,dt);vec2 cl=(p*2.-1.)*vec2(1.,-1.);gl_Position=vec4(cl,0,1);gl_PointSize=s;v=al;}';
+  var FS='precision mediump float;varying float v;void main(){float d=length(gl_PointCoord-.5);if(d>.5)discard;gl_FragColor=vec4(1,1,1,v*(1.-smoothstep(.3,.5,d))*.5);}';
+  function sh(t,src){var s=gl.createShader(t);gl.shaderSource(s,src);gl.compileShader(s);return s;}
+  var prog=gl.createProgram();
+  gl.attachShader(prog,sh(gl.VERTEX_SHADER,VS));gl.attachShader(prog,sh(gl.FRAGMENT_SHADER,FS));
+  gl.linkProgram(prog);gl.useProgram(prog);
+  var N=180,pos=new Float32Array(N*2),sz=new Float32Array(N),al2=new Float32Array(N);
+  for(var i=0;i<N;i++){pos[i*2]=Math.random();pos[i*2+1]=Math.random();sz[i]=Math.random()*2.4+.7;al2[i]=Math.random()*.4+.1;}
+  function buf(d,nm,n){var b=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,b);gl.bufferData(gl.ARRAY_BUFFER,d,gl.STATIC_DRAW);var l=gl.getAttribLocation(prog,nm);gl.enableVertexAttribArray(l);gl.vertexAttribPointer(l,n,gl.FLOAT,false,0,0);}
+  buf(pos,'a',2);buf(sz,'s',1);buf(al2,'al',1);
+  var uR=gl.getUniformLocation(prog,'r'),uT=gl.getUniformLocation(prog,'t'),uM=gl.getUniformLocation(prog,'m');
+  var mx=c.width/2,my=c.height/2;
+  addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;},{passive:true});
+  gl.enable(gl.BLEND);gl.blendFunc(gl.SRC_ALPHA,gl.ONE_MINUS_SRC_ALPHA);
+  var t0=performance.now();
+  (function loop(now){var t=(now-t0)*.001;gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);gl.uniform2f(uR,c.width,c.height);gl.uniform1f(uT,t);gl.uniform2f(uM,mx,my);gl.drawArrays(gl.POINTS,0,N);requestAnimationFrame(loop);})(t0);
+})();
+
+/* ── Intro ──────────────────────────────────────────────────────────── */
+var ready=false;
+function go(){
+  if(ready)return;ready=true;
+  var intro=document.getElementById('intro');
+  intro.style.transition='opacity .75s ease';
+  intro.style.opacity='0';intro.style.pointerEvents='none';
+  setTimeout(function(){
+    intro.style.display='none';
+    document.querySelectorAll('.hv').forEach(function(el){el.classList.add('on');});
+    cu();
+  },750);
+}
+var skip=document.getElementById('intro-skip');
+if(skip)skip.addEventListener('click',go);
+if(rm){go();}else{
+  var scan=document.getElementById('intro-scan'),logo=document.getElementById('intro-id');
+  var t0=performance.now(),H2=innerHeight;
+  (function sweep(now){
+    var pct=Math.min((now-t0)/700,1),e=pct<.5?2*pct*pct:-1+(4-2*pct)*pct;
+    scan.style.transform='translateY('+(e*H2)+'px)';
+    if(pct<1)requestAnimationFrame(sweep);
+    else{logo.style.transition='opacity .5s';logo.style.opacity='1';setTimeout(go,1050);}
+  })(t0);
+}
+
+/* ── Scroll progress ────────────────────────────────────────────────── */
+var prog2=document.getElementById('progress');
+addEventListener('scroll',function(){
+  if(!prog2)return;
+  prog2.style.transform='scaleX('+Math.min(scrollY/(document.documentElement.scrollHeight-innerHeight),1)+')';
+},{passive:true});
+
+/* ── Header solid ───────────────────────────────────────────────────── */
+var hdr=document.getElementById('hdr');
+addEventListener('scroll',function(){if(hdr)hdr.classList.toggle('solid',scrollY>60);},{passive:true});
+
+/* ── Hero 5-layer parallax ──────────────────────────────────────────── */
+(function(){
+  if(rm)return;
+  var lbg=document.getElementById('lbg'),lp=document.getElementById('lp'),
+      lc=document.getElementById('lcopy'),lg=document.getElementById('lg');
+  var mx=0,my=0,cx=innerWidth/2,cy=innerHeight/2,curX=0,curY=0;
+  addEventListener('mousemove',function(e){mx=(e.clientX-cx)/cx;my=(e.clientY-cy)/cy;},{passive:true});
+  addEventListener('resize',function(){cx=innerWidth/2;cy=innerHeight/2;},{passive:true});
+  (function tick(){
+    curX+=(mx-curX)*.05;curY+=(my-curY)*.05;
+    var hero=document.getElementById('hero');
+    if(hero&&hero.getBoundingClientRect().bottom>0){
+      var sy=scrollY;
+      if(lbg)lbg.style.transform='translateY('+(sy*.3)+'px) rotateX('+(curY*-3)+'deg) rotateY('+(curX*3)+'deg) translateZ(-400px) scale(1.5)';
+      if(lp){var im=lp.querySelector('img');if(im)im.style.transform='translateX('+(curX*-10)+'px) translateY('+(curY*-5+sy*.12)+'px) scale(1.07)';lp.style.transform='perspective(1200px) rotateY('+(curX*-2.5)+'deg) rotateX('+(curY*1.2)+'deg)';}
+      if(lc)lc.style.transform='translate('+(curX*7)+'px,'+(curY*3.5+sy*-.07)+'px)';
+      if(lg)lg.style.transform='translate('+(curX*18)+'px,'+(curY*12)+'px)';
+    }
+    requestAnimationFrame(tick);
+  })();
+})();
+
+/* ── Scroll depth reveals ───────────────────────────────────────────── */
+(function(){
+  if(!('IntersectionObserver' in window)){document.querySelectorAll('[data-s]').forEach(function(el){el.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(!e.isIntersecting)return;
+      var el=e.target,d=parseInt(el.dataset.d||0);
+      setTimeout(function(){el.classList.add('in');},d);
+      io.unobserve(el);
+    });
+  },{threshold:.1,rootMargin:'0px 0px -48px 0px'});
+  document.querySelectorAll('[data-s]').forEach(function(el){io.observe(el);});
+})();
+
+/* ── Scroll parallax backgrounds ────────────────────────────────────── */
+(function(){
+  if(rm)return;
+  var els=document.querySelectorAll('[data-parallax]');
+  addEventListener('scroll',function(){
+    els.forEach(function(el){
+      var r=el.getBoundingClientRect(),spd=parseFloat(el.dataset.parallax||.2);
+      el.style.transform='translateY('+((r.top+r.height/2-innerHeight/2)*spd)+'px) scale(1.07)';
+    });
+  },{passive:true});
+})();
+
+/* ── Count-up ───────────────────────────────────────────────────────── */
+function cu(){
+  document.querySelectorAll('[data-count]').forEach(function(el){
+    var tgt=parseInt(el.dataset.count),sfx=el.dataset.sfx||'',dur=parseInt(el.dataset.dur||1200);
+    if(rm){el.textContent=tgt+sfx;return;}
+    var t0=performance.now();
+    (function step(now){var p=Math.min((now-t0)/dur,1),e=1-Math.pow(1-p,3);el.textContent=Math.round(e*tgt)+sfx;if(p<1)requestAnimationFrame(step);})(t0);
+  });
+}
+
+/* ── 3D card hover ──────────────────────────────────────────────────── */
+(function(){
+  if(rm)return;
+  document.querySelectorAll('.rv,.cred-panel,.qcard').forEach(function(card){
+    var max=card.classList.contains('cred-panel')?6:4;
+    card.addEventListener('mousemove',function(e){
+      var r=card.getBoundingClientRect();
+      var dx=(e.clientX-r.left-r.width/2)/(r.width/2);
+      var dy=(e.clientY-r.top-r.height/2)/(r.height/2);
+      card.style.transform='perspective(900px) rotateX('+(-dy*max)+'deg) rotateY('+(dx*max)+'deg) translateZ(8px)';
+    });
+    card.addEventListener('mouseleave',function(){card.style.transform='';});
+  });
+})();
+
+/* ── Timeline draw ──────────────────────────────────────────────────── */
+(function(){
+  var fill=document.getElementById('tlfill'),steps=document.getElementById('tlsteps');
+  if(!fill||!steps)return;
+  var dots=steps.querySelectorAll('.tl-step');
+  function update(){
+    var r=steps.getBoundingClientRect();
+    var viewH=innerHeight;
+    if(r.bottom<0||r.top>viewH)return;
+    var pct=Math.max(0,Math.min(1,(viewH*.65-r.top)/(r.height)));
+    fill.style.transform='scaleX('+pct+')';
+    dots.forEach(function(d,i){d.classList.toggle('lit',pct>i/dots.length+.1);});
+  }
+  addEventListener('scroll',update,{passive:true});
+  update();
+})();
+
+/* ── Magnetic cursor ────────────────────────────────────────────────── */
+(function(){
+  var dot=document.getElementById('c-dot'),ring=document.getElementById('c-ring'),lbl=document.getElementById('c-label');
+  if(!dot||!ring)return;
+  if(window.matchMedia('(hover:none)').matches){dot.style.display=ring.style.display='none';document.body.style.cursor='auto';return;}
+  var mx=0,my=0,rx=0,ry=0;
+  addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';if(lbl){lbl.style.left=mx+'px';lbl.style.top=my+'px';}},{passive:true});
+  (function lerp(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(lerp);})();
+  document.querySelectorAll('[data-cursor]').forEach(function(el){
+    el.addEventListener('mouseenter',function(){document.body.classList.add('c-on');if(lbl)lbl.textContent=el.dataset.cursor;});
+    el.addEventListener('mouseleave',function(){document.body.classList.remove('c-on');if(lbl)lbl.textContent='';});
+  });
+})();
+
+/* ── Hamburger ──────────────────────────────────────────────────────── */
+(function(){
+  var btn=document.getElementById('hbg'),nav=document.getElementById('mob');
+  if(!btn||!nav)return;
+  function close(){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');document.body.style.overflow='';}
+  function open(){nav.classList.add('open');btn.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
+  btn.addEventListener('click',function(e){e.stopPropagation();nav.classList.contains('open')?close():open();});
+  nav.addEventListener('click',function(e){if(e.target.tagName==='A')close();});
+  addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+
+/* ── Smooth anchors ─────────────────────────────────────────────────── */
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var id=a.getAttribute('href').slice(1);if(!id)return;
+    var t=document.getElementById(id);if(!t)return;
+    e.preventDefault();t.scrollIntoView({behavior:rm?'auto':'smooth'});
+  });
+});
+
+})();
+</script>
 </body>
 </html>
