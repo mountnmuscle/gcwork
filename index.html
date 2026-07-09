@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Freedom Group Construction | Unlimited General Contractor — Charlotte, NC</title>
-  <meta name="description" content="Freedom Group Construction is a licensed unlimited general contractor serving Charlotte, NC and the surrounding metro. New construction, full renovations, additions, kitchen & bath, decks, roofing. Free quotes.">
+  <meta name="description" content="Freedom Group Construction is a licensed unlimited general contractor serving Charlotte, NC and the surrounding metro. New construction, full renovations, additions, kitchen & bath, decks, roofing. Free written quotes.">
   <meta name="keywords" content="general contractor charlotte nc, unlimited license gc, home renovation charlotte nc, new construction charlotte">
   <link rel="canonical" href="https://freedomgroupconstruction.com/">
   <meta property="og:title" content="Freedom Group Construction | Unlimited General Contractor — Charlotte, NC">
-  <meta property="og:description" content="Freedom Group Construction is a licensed unlimited general contractor serving Charlotte, NC and the surrounding metro. New construction, full renovations, additions, kitchen & bath, decks, roofing. Free quotes.">
+  <meta property="og:description" content="Freedom Group Construction is a licensed unlimited general contractor serving Charlotte, NC and the surrounding metro. New construction, full renovations, additions, kitchen & bath, decks, roofing. Free written quotes.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://freedomgroupconstruction.com/">
   <meta name="twitter:card" content="summary_large_image">
@@ -24,42 +24,44 @@
 </head>
 <body>
 
+<canvas id="grain" aria-hidden="true"></canvas>
 <div id="scroll-bar" aria-hidden="true"></div>
-<header class="site-header">
-  <div class="header-inner">
-    <a href="index.html" class="logo" aria-label="Freedom Group Construction home">
-      <svg class="logo-mark" viewBox="0 0 38 38" fill="none" aria-hidden="true">
-  <rect width="38" height="38" rx="3" fill="#CC0000"/>
-  <rect width="38" height="38" rx="3" fill="url(#sheen)"/>
+<div id="cursor-dot" aria-hidden="true"></div>
+<div id="cursor-ring" aria-hidden="true"></div>
+<div id="cursor-label" aria-hidden="true"></div>
+<header class="site-header" id="site-header">
+  <a href="index.html" class="logo" aria-label="Freedom Group Construction home">
+    <svg class="logo-mark" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+  <rect width="36" height="36" rx="3" fill="#CC0000"/>
+  <rect width="36" height="36" rx="3" fill="url(#ls)"/>
   <defs>
-    <linearGradient id="sheen" x1="0" y1="0" x2="38" y2="38" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#fff" stop-opacity=".2"/>
-      <stop offset="50%" stop-color="#fff" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#000" stop-opacity=".15"/>
+    <linearGradient id="ls" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fff" stop-opacity=".22"/>
+      <stop offset="48%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity=".16"/>
     </linearGradient>
   </defs>
-  <path d="M19 5 9 9.5v8c0 7 5.5 11.8 10 13.5 4.5-1.7 10-6.5 10-13.5v-8z" fill="white" opacity=".96"/>
-  <path d="M19 7.5 11 11.5v5.9c0 5.8 4.1 9.8 8 11.2 3.9-1.4 8-5.4 8-11.2v-5.9z" fill="#CC0000"/>
-  <polygon points="19,10.5 20.4,14.8 25,14.8 21.3,17.4 22.7,21.7 19,19.1 15.3,21.7 16.7,17.4 13,14.8 17.6,14.8" fill="white"/>
+  <path d="M18 4.5 9 9v7.8c0 6.8 5.2 11.5 9 13.2 3.8-1.7 9-6.4 9-13.2V9z" fill="white" opacity=".96"/>
+  <path d="M18 7 11 11v5.7c0 5.6 3.9 9.5 7 10.8 3.1-1.3 7-5.2 7-10.8V11z" fill="#CC0000"/>
+  <polygon points="18,9.5 19.5,14 24,14 20.5,16.7 21.8,21.2 18,18.6 14.2,21.2 15.5,16.7 12,14 16.5,14" fill="white"/>
 </svg>
-      <div>
-        <span class="logo-name">Freedom Group Construction</span>
-        <span class="logo-sub">Unlimited GC · Charlotte, NC</span>
-      </div>
-    </a>
-    <nav class="main-nav" aria-label="Primary">
-      <a href="index.html#portfolio">Work</a>
+    <div>
+      <span class="logo-name">Freedom Group Construction</span>
+      <span class="logo-sub">Unlimited GC · Charlotte, NC</span>
+    </div>
+  </a>
+  <nav class="main-nav" aria-label="Primary">
+    <a href="index.html#portfolio">Work</a>
       <a href="index.html#services">Services</a>
       <a href="index.html#about">About</a>
       <a href="index.html#areas">Service Areas</a>
-    </nav>
-    <div class="header-right">
-      <a href="tel:7047777850" class="hdr-phone"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.7-.37 1.05-.24 1.1.4 2.3.7 3.55.7.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C7.61 21 3 16.39 3 11c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.32.03.7-.27.93z"/></svg> (704) 777-7850</a>
-      <a href="index.html#quote" class="btn btn-red">Free Quote <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
-      <button class="hamburger" id="hbg" aria-label="Open menu" aria-expanded="false" aria-controls="mob-nav">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+  </nav>
+  <div class="hdr-right">
+    <a href="tel:7047777850" class="hdr-phone"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.7-.37 1.05-.24 1.1.4 2.3.7 3.55.7.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C7.61 21 3 16.39 3 11c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.32.03.7-.27.93z"/></svg> (704) 777-7850</a>
+    <a href="index.html#quote" class="btn btn-red" data-cursor="Quote">Free Quote <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
+    <button class="hamburger" id="hbg" aria-label="Open menu" aria-expanded="false" aria-controls="mob-nav">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 <nav class="mobile-menu" id="mob-nav" aria-label="Mobile">
@@ -69,207 +71,210 @@
     <a href="index.html#about">About</a>
     <a href="index.html#areas">Service Areas</a>
   </nav>
-  <div class="mob-footer">
+  <div class="mob-cta">
     <a href="tel:7047777850" class="btn btn-outline"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.7-.37 1.05-.24 1.1.4 2.3.7 3.55.7.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C7.61 21 3 16.39 3 11c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.32.03.7-.27.93z"/></svg> (704) 777-7850</a>
     <a href="index.html#quote" class="btn btn-red">Free Quote <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
   </div>
 </nav>
 
-<!-- ══ HERO ══════════════════════════════════════════════════════════════ -->
-<section class="hero" aria-label="Hero">
+<!-- ══ INTRO ═══════════════════════════════════════════════════════════ -->
+<div id="intro" role="presentation" aria-hidden="true">
+  <div id="intro-line"></div>
+  <div id="intro-logo">
+    Freedom Group Construction
+    <span>Unlimited General Contractor · Charlotte, NC</span>
+  </div>
+  <button id="intro-skip">Skip</button>
+</div>
 
-  <div class="hero-copy">
-    <span class="eyebrow">Charlotte, NC &amp; the Surrounding Metro</span>
-    <h1>Built right.<br><em>Licensed</em><br>for everything.</h1>
-    <p class="hero-lede">An unlimited GC license means no scope is off-limits. New builds, full renovations, structural repairs — one license, one crew, one timeline.</p>
-    <div class="hero-actions">
-      <a href="#quote" class="btn btn-red">Free Quote <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
-      <a href="#portfolio" class="btn btn-outline">View Our Work <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
-    </div>
-    <div class="hero-trust">
-      <div class="trust-item">
-        <span class="trust-n">Unlimited</span>
-        <span class="trust-l">GC License Class</span>
-      </div>
-      <div class="trust-item">
-        <span class="trust-n" data-count="16" data-suffix="" data-dur="1200">16</span>
-        <span class="trust-l">Communities Served</span>
-      </div>
-      <div class="trust-item">
-        <span class="trust-n" data-count="100" data-suffix="%" data-dur="1000">100%</span>
-        <span class="trust-l">Licensed &amp; Insured</span>
-      </div>
+<!-- ══ HERO ═════════════════════════════════════════════════════════════ -->
+<section id="hero" aria-label="Hero">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+  <div id="lyr-bg" aria-hidden="true" style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1400&q=85')"></div>
+  <div id="lyr-vignette" aria-hidden="true"></div>
+  <div id="lyr-glow" aria-hidden="true"></div>
+
+  <div id="lyr-photo" aria-hidden="true">
+    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1400&q=85" alt="Construction planning and blueprints" loading="eager">
+  </div>
+
+  <div id="lyr-copy">
+    <span class="eyebrow h-hide">Freedom Group Construction · Charlotte, NC &amp; Surrounding Metro</span>
+    <h1 class="h-hide">
+      Built right.<br><em>Licensed</em><br>for everything.
+    </h1>
+    <p class="lede h-hide">An unlimited GC license means no scope is off-limits. New builds, full renovations, structural repairs — one license, one crew, one timeline.</p>
+    <div class="hero-btns h-hide">
+      <a href="#quote" class="btn btn-red" data-cursor="Quote">Free Quote <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
+      <a href="#portfolio" class="btn btn-outline" data-cursor="Work">View Our Work <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
     </div>
   </div>
 
-  <div class="hero-mosaic" aria-hidden="true">
-    <div class="mosaic-cell mosaic-cell--main">
-      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=85" alt="General contractor Charlotte NC — blueprints and planning">
+  <div id="hero-stats">
+    <div class="stat-blk">
+      <span class="stat-n">Unlimited</span>
+      <span class="stat-l">License Classification</span>
     </div>
-    <div class="mosaic-cell mosaic-cell--accent">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Custom home renovation Charlotte">
+    <div class="stat-blk">
+      <span class="stat-n" data-count="16" data-dur="1200">16</span>
+      <span class="stat-l">Communities Served</span>
     </div>
-    <div class="mosaic-cell">
-      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Home addition Charlotte NC">
+    <div class="stat-blk">
+      <span class="stat-n" data-count="100" data-suffix="%" data-dur="900">100%</span>
+      <span class="stat-l">Licensed &amp; Insured</span>
+    </div>
+    <div class="stat-blk">
+      <span class="stat-n">Free</span>
+      <span class="stat-l">Written Quotes</span>
     </div>
   </div>
 
+  <div id="scroll-hint" class="h-hide">
+    <span>Scroll</span>
+    <div id="sh-line"></div>
+  </div>
 </section>
 
-<!-- ══ SERVICES ══════════════════════════════════════════════════════════ -->
-<section class="sect" id="services">
+<!-- ══ SERVICES (light white) ═══════════════════════════════════════════ -->
+<section class="sect sect--light" id="services">
   <div class="wrap">
-    <div class="sect-head" style="text-align:center;" data-reveal>
+    <div class="sect-head center" data-reveal="far">
       <span class="eyebrow">What We Build</span>
       <h2>Full-scope general contracting</h2>
-      <p class="lede" style="margin:14px auto 0;max-width:560px;">An unlimited license means we can permit it, build it, and finish it — without farming out the parts that matter most.</p>
+      <p class="lede">An unlimited license means we can permit it, build it, and finish it — without farming out the parts that matter most.</p>
     </div>
-  </div>
-  <div style="max-width:var(--max);margin:0 auto;padding:0 40px;" data-stagger-parent>
     <div class="svc-grid">
-  <a href="services/new-home-construction.html" class="svc-card" data-stagger data-card3d="5">
+  <a href="services/new-home-construction.html" class="svc-card" data-cursor="Explore" data-reveal data-delay="0">
+    <span class="svc-num">01</span>
     <div class="svc-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></div>
     <h3>New Home Construction</h3>
     <p>Custom homes built from the ground up — permits, trades, and timeline under one license.</p>
-    <span class="svc-link">Learn more <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
+    <span class="svc-link">Learn more <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
   </a>
-  <a href="services/home-additions.html" class="svc-card" data-stagger data-card3d="5">
-    <div class="svc-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 4h7V2H2v9h2V7l5 5 5-5v4h2V2h-9v2zm8 8l-5 5v-4H4v2h4l-5 5 1 1 5-5v4h2v-7z"/></svg></div>
+  <a href="services/home-additions.html" class="svc-card" data-cursor="Explore" data-reveal data-delay="70">
+    <span class="svc-num">02</span>
+    <div class="svc-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 4h7V2H2v9h2zm-2 9H0v9h9v-2H4l5-5-1-2-5 5zm18-9h-5V2h-2v9h9V9h-2zm-4 12l-5-5-2 1 5 5H9v2h9v-9h-2z"/></svg></div>
     <h3>Home Additions</h3>
     <p>Second stories, in-law suites, room additions — tied seamlessly into your existing structure.</p>
-    <span class="svc-link">Learn more <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
+    <span class="svc-link">Learn more <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
   </a>
-  <a href="services/full-renovations.html" class="svc-card" data-stagger data-card3d="5">
+  <a href="services/full-renovations.html" class="svc-card" data-cursor="Explore" data-reveal data-delay="140">
+    <span class="svc-num">03</span>
     <div class="svc-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.5 2.1L13 4.6l1 1-7.7 7.7-1-1-2.5 2.5 4.9 4.9 2.5-2.5-1-1 7.7-7.7 1 1 2.5-2.5zM2 17l-1 4 4-1z"/></svg></div>
     <h3>Full Renovations</h3>
     <p>Whole-home gut remodels and open-concept conversions — demo through finish, one crew.</p>
-    <span class="svc-link">Learn more <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
+    <span class="svc-link">Learn more <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
   </a>
-  <a href="services/kitchen-bath-remodeling.html" class="svc-card" data-stagger data-card3d="5">
+  <a href="services/kitchen-bath-remodeling.html" class="svc-card" data-cursor="Explore" data-reveal data-delay="210">
+    <span class="svc-num">04</span>
     <div class="svc-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2.5v9c0 1.8-1.2 3.3-3 3.8V22h-2v-6.7c-1.8-.5-3-2-3-3.8v-9h2v5.5h1V2.5h2v5.5h1V2.5zM7 2C4.2 3 3 5.7 3 9c0 2.4 1.2 4.4 3 5.4V22h2V14.4c1.8-1 3-3 3-5.4 0-3.3-1.2-6-4-7z"/></svg></div>
     <h3>Kitchen & Bath Remodeling</h3>
     <p>The two rooms that sell houses — plumbing, electrical, tile and cabinetry in sequence.</p>
-    <span class="svc-link">Learn more <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
+    <span class="svc-link">Learn more <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
   </a>
-  <a href="services/decks-outdoor-living.html" class="svc-card" data-stagger data-card3d="5">
+  <a href="services/decks-outdoor-living.html" class="svc-card" data-cursor="Explore" data-reveal data-delay="280">
+    <span class="svc-num">05</span>
     <div class="svc-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 20h20v2H2zm2-2V9.5l8-5.5 8 5.5V18h-4v-8H8v8zm6 0h4v-6h-4z"/></svg></div>
     <h3>Decks & Outdoor Living</h3>
     <p>Decks, porches and outdoor structures — proper footings, correct flashing, built to code.</p>
-    <span class="svc-link">Learn more <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
+    <span class="svc-link">Learn more <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
   </a>
-  <a href="services/roofing-structural-repairs.html" class="svc-card" data-stagger data-card3d="5">
+  <a href="services/roofing-structural-repairs.html" class="svc-card" data-cursor="Explore" data-reveal data-delay="350">
+    <span class="svc-num">06</span>
     <div class="svc-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3L2 12h2v9h7v-5h2v5h7v-9h2zm0 2.5l7 6V19h-3v-5H8v5H5v-7.5z"/></svg></div>
     <h3>Roofing & Structural Repairs</h3>
     <p>Roof replacement and structural fixes handled directly under our unlimited license.</p>
-    <span class="svc-link">Learn more <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
+    <span class="svc-link">Learn more <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></span>
   </a>
     </div>
   </div>
 </section>
 
-<!-- ══ PORTFOLIO ══════════════════════════════════════════════════════════ -->
+<!-- ══ PORTFOLIO (warm surface) ══════════════════════════════════════════ -->
 <section class="sect sect--surface" id="portfolio">
   <div class="wrap">
-    <div data-reveal style="margin-bottom:48px;">
+    <div class="sect-head" data-reveal="far">
       <span class="eyebrow">Recent Work</span>
       <h2>Projects across the Charlotte metro</h2>
     </div>
     <div class="port-grid">
-  <div class="port-item port-wide" data-reveal="portfolio" data-delay="0">
-    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=80" alt="Modern Kitchen Renovation" loading="lazy">
-    <div class="port-label">
-      <h4>Modern Kitchen Renovation</h4>
-      <span class="port-type">Kitchen & Bath · Ballantyne</span>
-    </div>
+  <div class="port-item port-wide" data-reveal="port" data-delay="0">
+    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=85" alt="Modern Kitchen Renovation — Ballantyne, NC" loading="lazy">
+    <div class="port-label"><h4>Modern Kitchen Renovation</h4><span class="port-type">Kitchen & Bath · Ballantyne, NC</span></div>
   </div>
-  <div class="port-item" data-reveal="portfolio" data-delay="80">
-    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=700&q=80" alt="Custom Home Build" loading="lazy">
-    <div class="port-label">
-      <h4>Custom Home Build</h4>
-      <span class="port-type">New Construction · Mooresville</span>
-    </div>
+  <div class="port-item" data-reveal="port" data-delay="80">
+    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=700&q=80" alt="Custom Home Build — Mooresville, NC" loading="lazy">
+    <div class="port-label"><h4>Custom Home Build</h4><span class="port-type">New Construction · Mooresville, NC</span></div>
   </div>
-  <div class="port-item" data-reveal="portfolio" data-delay="160">
-    <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=700&q=80" alt="Open Concept Renovation" loading="lazy">
-    <div class="port-label">
-      <h4>Open Concept Renovation</h4>
-      <span class="port-type">Full Renovation · Fort Mill, SC</span>
-    </div>
+  <div class="port-item" data-reveal="port" data-delay="160">
+    <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=700&q=80" alt="Open Concept Renovation — Fort Mill, SC" loading="lazy">
+    <div class="port-label"><h4>Open Concept Renovation</h4><span class="port-type">Full Renovation · Fort Mill, SC</span></div>
   </div>
-  <div class="port-item" data-reveal="portfolio" data-delay="240">
-    <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=700&q=80" alt="Master Suite Addition" loading="lazy">
-    <div class="port-label">
-      <h4>Master Suite Addition</h4>
-      <span class="port-type">Home Addition · Matthews</span>
-    </div>
+  <div class="port-item" data-reveal="port" data-delay="0">
+    <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?w=700&q=80" alt="Master Suite Addition — Matthews, NC" loading="lazy">
+    <div class="port-label"><h4>Master Suite Addition</h4><span class="port-type">Home Addition · Matthews, NC</span></div>
   </div>
-  <div class="port-item" data-reveal="portfolio" data-delay="320">
-    <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?w=700&q=80" alt="Covered Deck & Porch" loading="lazy">
-    <div class="port-label">
-      <h4>Covered Deck & Porch</h4>
-      <span class="port-type">Outdoor Living · Lake Wylie</span>
-    </div>
+  <div class="port-item" data-reveal="port" data-delay="80">
+    <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?w=700&q=80" alt="Covered Deck & Porch — Lake Wylie, SC" loading="lazy">
+    <div class="port-label"><h4>Covered Deck & Porch</h4><span class="port-type">Outdoor Living · Lake Wylie, SC</span></div>
   </div>
-  <div class="port-item" data-reveal="portfolio" data-delay="400">
-    <img src="https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=700&q=80" alt="Primary Bath Remodel" loading="lazy">
-    <div class="port-label">
-      <h4>Primary Bath Remodel</h4>
-      <span class="port-type">Kitchen & Bath · Huntersville</span>
-    </div>
+  <div class="port-item" data-reveal="port" data-delay="160">
+    <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=700&q=80" alt="Primary Bath Remodel — Huntersville, NC" loading="lazy">
+    <div class="port-label"><h4>Primary Bath Remodel</h4><span class="port-type">Kitchen & Bath · Huntersville, NC</span></div>
   </div>
     </div>
   </div>
 </section>
 
-<!-- ══ ABOUT ═════════════════════════════════════════════════════════════ -->
+<!-- ══ ABOUT (dark cinematic) ════════════════════════════════════════════ -->
 <div class="about-wrap" id="about">
   <div class="about-img">
-    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1000&q=85" alt="General contractor team Charlotte NC" loading="lazy"
-         data-parallax="0.25">
+    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=85" alt="Freedom Group Construction — general contractor team on site" loading="lazy" data-parallax="0.22">
   </div>
   <div class="about-copy">
     <span class="eyebrow">About Us</span>
-    <h2 data-reveal>The license that lets us do the job right —<br><em>not the workaround.</em></h2>
-    <p data-reveal data-delay="100">Most contractors are limited to cosmetic work and must bring in separate licensed subs the moment a project touches structural, electrical, or plumbing systems. We hold an unlimited general contractor license — meaning we manage those pieces directly. No markup chain, no coordination gaps.</p>
-    <p data-reveal data-delay="160">Focused on residential renovation and new construction across the Charlotte metro, with commercial GC capacity on the way.</p>
-    <div class="creds-grid" data-reveal data-delay="220">
-      <div class="cred"><div class="cred-n">Unlimited</div><div class="cred-l">License Class</div></div>
-      <div class="cred"><div class="cred-n">16</div><div class="cred-l">Metro Areas</div></div>
-      <div class="cred"><div class="cred-n">6</div><div class="cred-l">Service Lines</div></div>
-      <div class="cred"><div class="cred-n">100%</div><div class="cred-l">Insured</div></div>
+    <h2 data-reveal="far">The license that lets us do the job right —<br><em>not the workaround.</em></h2>
+    <p data-reveal data-delay="100">Most contractors are limited to cosmetic work and must bring in separate licensed subs the moment a project touches structural, electrical, or plumbing systems. We hold an unlimited general contractor license — meaning we manage those pieces directly.</p>
+    <p data-reveal data-delay="160">No markup chain. No coordination gaps. No waiting on the next contractor to show up.</p>
+    <div class="cred-row" data-reveal data-delay="220">
+      <div class="cred-cell"><div class="cred-n">Unlimited</div><div class="cred-l">License Class</div></div>
+      <div class="cred-cell"><div class="cred-n">16</div><div class="cred-l">Metro Areas</div></div>
+      <div class="cred-cell"><div class="cred-n">6</div><div class="cred-l">Service Lines</div></div>
+      <div class="cred-cell"><div class="cred-n">100%</div><div class="cred-l">Insured</div></div>
     </div>
     <div class="about-actions" data-reveal data-delay="280">
-      <a href="#quote" class="btn btn-red">Start Your Project <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
-      <a href="tel:7047777850" class="btn btn-outline"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.7-.37 1.05-.24 1.1.4 2.3.7 3.55.7.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C7.61 21 3 16.39 3 11c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.32.03.7-.27.93z"/></svg> (704) 777-7850</a>
+      <a href="#quote" class="btn btn-red" data-cursor="Quote">Start Your Project <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
+      <a href="tel:7047777850" class="btn btn-outline" data-cursor="Call"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.7-.37 1.05-.24 1.1.4 2.3.7 3.55.7.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C7.61 21 3 16.39 3 11c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.32.03.7-.27.93z"/></svg> (704) 777-7850</a>
     </div>
   </div>
 </div>
 
-<!-- ══ PROCESS ════════════════════════════════════════════════════════════ -->
-<section class="sect sect--black">
+<!-- ══ PROCESS (dark) ════════════════════════════════════════════════════ -->
+<section class="sect sect--dark">
   <div class="wrap">
-    <div style="text-align:center;margin-bottom:52px;" data-reveal>
-      <span class="eyebrow" style="color:#CC3333;">How It Works</span>
-      <h2 style="color:white;">From first call to final walkthrough</h2>
+    <div class="sect-head center" data-reveal="far">
+      <span class="eyebrow">How It Works</span>
+      <h2>From first call to final walkthrough</h2>
     </div>
-    <div class="process-row" data-stagger-parent>
-      <div class="process-step" data-stagger>
-        <span class="process-n">01</span>
+    <div class="process-grid">
+      <div class="process-panel" data-reveal data-delay="0" data-cursor="Read">
+        <span class="process-num">01</span>
         <h4>Free Quote</h4>
         <p>We schedule a walkthrough and deliver a written quote — no obligation, no pressure.</p>
       </div>
-      <div class="process-step" data-stagger>
-        <span class="process-n">02</span>
+      <div class="process-panel" data-reveal data-delay="100" data-cursor="Read">
+        <span class="process-num">02</span>
         <h4>Scope &amp; Permit</h4>
         <p>We finalize scope, pull required permits, and lock a realistic timeline before work starts.</p>
       </div>
-      <div class="process-step" data-stagger>
-        <span class="process-n">03</span>
+      <div class="process-panel" data-reveal data-delay="200" data-cursor="Read">
+        <span class="process-num">03</span>
         <h4>Build</h4>
-        <p>Our crews execute in sequence under our license. No gaps waiting on the next contractor.</p>
+        <p>Our crews execute in sequence under our license — no gaps waiting on the next contractor.</p>
       </div>
-      <div class="process-step" data-stagger>
-        <span class="process-n">04</span>
+      <div class="process-panel" data-reveal data-delay="300" data-cursor="Read">
+        <span class="process-num">04</span>
         <h4>Walkthrough</h4>
         <p>Final walkthrough, punch-list resolution, and inspection sign-off before we call it done.</p>
       </div>
@@ -277,25 +282,25 @@
   </div>
 </section>
 
-<!-- ══ REVIEWS ════════════════════════════════════════════════════════════ -->
-<section class="sect" id="reviews">
+<!-- ══ REVIEWS (light white) ═════════════════════════════════════════════ -->
+<section class="sect sect--light">
   <div class="wrap">
-    <div style="text-align:center;margin-bottom:48px;" data-reveal>
+    <div class="sect-head center" data-reveal="far">
       <span class="eyebrow">Client Reviews</span>
       <h2>What homeowners say</h2>
     </div>
-    <div class="reviews-grid" data-stagger-parent>
-      <div class="review-card" data-stagger data-card3d="4">
+    <div class="reviews-grid">
+      <div class="review-card" data-reveal data-delay="0" data-cursor="Read">
         <div class="review-stars">★★★★★</div>
         <p class="review-text">"They handled our addition from permit to final inspection without us managing a single sub. That alone was worth every dollar."</p>
         <span class="review-who">Homeowner · Ballantyne, NC</span>
       </div>
-      <div class="review-card" data-stagger data-card3d="4">
+      <div class="review-card" data-reveal data-delay="100" data-cursor="Read">
         <div class="review-stars">★★★★★</div>
         <p class="review-text">"Our kitchen remodel finished on the timeline we were quoted. Communication was clear the entire way through."</p>
         <span class="review-who">Homeowner · Fort Mill, SC</span>
       </div>
-      <div class="review-card" data-stagger data-card3d="4">
+      <div class="review-card" data-reveal data-delay="200" data-cursor="Read">
         <div class="review-stars">★★★★★</div>
         <p class="review-text">"Needed structural repair work most contractors wouldn't touch. They scoped it and handled everything under one contract."</p>
         <span class="review-who">Homeowner · Concord, NC</span>
@@ -304,60 +309,60 @@
   </div>
 </section>
 
-<!-- ══ PHOTO BANNER CTA ═══════════════════════════════════════════════════ -->
+<!-- ══ PHOTO BANNER CTA ══════════════════════════════════════════════════ -->
 <div class="photo-banner">
-  <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1400&q=80" alt="Charlotte NC general contractor" loading="lazy" data-parallax="0.2">
-  <div class="banner-content">
-    <h2 data-reveal>Ready to start your project?</h2>
-    <p data-reveal data-delay="100">Free written quotes. No pressure.</p>
-    <div class="banner-btns" data-reveal data-delay="180">
-      <a href="tel:7047777850" class="btn btn-red"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.7-.37 1.05-.24 1.1.4 2.3.7 3.55.7.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C7.61 21 3 16.39 3 11c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.32.03.7-.27.93z"/></svg> (704) 777-7850</a>
-      <a href="#quote" class="btn btn-outline">Request a Quote <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
+  <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&q=80" alt="Charlotte NC construction project" loading="lazy" data-parallax="0.18">
+  <div class="banner-body">
+    <h2 data-reveal="far">Ready to start your project?</h2>
+    <p data-reveal data-delay="80">Free written quotes. No pressure.</p>
+    <div class="banner-btns" data-reveal data-delay="160">
+      <a href="tel:7047777850" class="btn btn-red" data-cursor="Call"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.7-.37 1.05-.24 1.1.4 2.3.7 3.55.7.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C7.61 21 3 16.39 3 11c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.32.03.7-.27.93z"/></svg> (704) 777-7850</a>
+      <a href="#quote" class="btn btn-outline" data-cursor="Quote">Request a Quote <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
     </div>
   </div>
 </div>
 
-<!-- ══ LOCATIONS ══════════════════════════════════════════════════════════ -->
+<!-- ══ LOCATIONS (warm surface) ══════════════════════════════════════════ -->
 <section class="sect sect--surface" id="areas">
   <div class="wrap">
-    <div style="text-align:center;margin-bottom:48px;" data-reveal>
+    <div class="sect-head center" data-reveal="far">
       <span class="eyebrow">Where We Build</span>
       <h2>Serving 16 communities across the Charlotte metro</h2>
-      <p class="lede" style="margin:12px auto 0;max-width:520px;">From uptown Charlotte to the Lake Wylie shoreline.</p>
+      <p class="lede">From uptown Charlotte to the Lake Wylie shoreline.</p>
     </div>
-    <div class="loc-grid" data-stagger-parent>
-    <a class="loc-chip" data-stagger href="locations/charlotte.html">Charlotte, NC</a>
-    <a class="loc-chip" data-stagger href="locations/huntersville.html">Huntersville, NC</a>
-    <a class="loc-chip" data-stagger href="locations/concord.html">Concord, NC</a>
-    <a class="loc-chip" data-stagger href="locations/mooresville.html">Mooresville, NC</a>
-    <a class="loc-chip" data-stagger href="locations/matthews.html">Matthews, NC</a>
-    <a class="loc-chip" data-stagger href="locations/pineville.html">Pineville, NC</a>
-    <a class="loc-chip" data-stagger href="locations/ballantyne.html">Ballantyne, NC</a>
-    <a class="loc-chip" data-stagger href="locations/mount-holly.html">Mount Holly, NC</a>
-    <a class="loc-chip" data-stagger href="locations/gastonia.html">Gastonia, NC</a>
-    <a class="loc-chip" data-stagger href="locations/waxhaw.html">Waxhaw, NC</a>
-    <a class="loc-chip" data-stagger href="locations/stallings.html">Stallings, NC</a>
-    <a class="loc-chip" data-stagger href="locations/indian-trail.html">Indian Trail, NC</a>
-    <a class="loc-chip" data-stagger href="locations/fort-mill.html">Fort Mill, SC</a>
-    <a class="loc-chip" data-stagger href="locations/tega-cay.html">Tega Cay, SC</a>
-    <a class="loc-chip" data-stagger href="locations/lake-wylie.html">Lake Wylie, SC</a>
-    <a class="loc-chip" data-stagger href="locations/rock-hill.html">Rock Hill, SC</a>
+    <div class="loc-grid">
+  <a class="loc-chip" href="locations/charlotte.html" data-reveal data-delay="0" data-cursor="View">Charlotte, NC</a>
+  <a class="loc-chip" href="locations/huntersville.html" data-reveal data-delay="30" data-cursor="View">Huntersville, NC</a>
+  <a class="loc-chip" href="locations/concord.html" data-reveal data-delay="60" data-cursor="View">Concord, NC</a>
+  <a class="loc-chip" href="locations/mooresville.html" data-reveal data-delay="90" data-cursor="View">Mooresville, NC</a>
+  <a class="loc-chip" href="locations/matthews.html" data-reveal data-delay="120" data-cursor="View">Matthews, NC</a>
+  <a class="loc-chip" href="locations/pineville.html" data-reveal data-delay="150" data-cursor="View">Pineville, NC</a>
+  <a class="loc-chip" href="locations/ballantyne.html" data-reveal data-delay="180" data-cursor="View">Ballantyne, NC</a>
+  <a class="loc-chip" href="locations/mount-holly.html" data-reveal data-delay="210" data-cursor="View">Mount Holly, NC</a>
+  <a class="loc-chip" href="locations/gastonia.html" data-reveal data-delay="240" data-cursor="View">Gastonia, NC</a>
+  <a class="loc-chip" href="locations/waxhaw.html" data-reveal data-delay="270" data-cursor="View">Waxhaw, NC</a>
+  <a class="loc-chip" href="locations/stallings.html" data-reveal data-delay="300" data-cursor="View">Stallings, NC</a>
+  <a class="loc-chip" href="locations/indian-trail.html" data-reveal data-delay="330" data-cursor="View">Indian Trail, NC</a>
+  <a class="loc-chip" href="locations/fort-mill.html" data-reveal data-delay="360" data-cursor="View">Fort Mill, SC</a>
+  <a class="loc-chip" href="locations/tega-cay.html" data-reveal data-delay="390" data-cursor="View">Tega Cay, SC</a>
+  <a class="loc-chip" href="locations/lake-wylie.html" data-reveal data-delay="420" data-cursor="View">Lake Wylie, SC</a>
+  <a class="loc-chip" href="locations/rock-hill.html" data-reveal data-delay="450" data-cursor="View">Rock Hill, SC</a>
     </div>
   </div>
 </section>
 
-<!-- ══ QUOTE ═════════════════════════════════════════════════════════════ -->
+<!-- ══ QUOTE (dark left / light right) ══════════════════════════════════ -->
 <section class="quote-wrap" id="quote">
   <div class="quote-left">
     <span class="eyebrow">Get Started</span>
-    <h2 data-reveal>Request your free quote</h2>
+    <h2 data-reveal="far">Request your free quote</h2>
     <p data-reveal data-delay="80">Fill out the form and we'll follow up to schedule a walkthrough — or call (704) 777-7850 directly.</p>
     <div class="map-wrap" data-reveal data-delay="160">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208874.48!2d-80.9799!3d35.2271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sCharlotte%20NC!5e0!3m2!1sen!2sus!4v1700000000" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         title="Freedom Group Construction service area map" allowfullscreen></iframe>
     </div>
   </div>
-  <div class="quote-right" data-reveal data-delay="80">
+  <div class="quote-right" data-reveal data-delay="60">
     <form class="qform" action="https://formspree.io/f/PLACEHOLDER" method="POST">
   <div class="qrow">
     <div class="fg"><label for="qn">Full Name *</label><input id="qn" name="name" type="text" placeholder="Jane Smith" required></div>
@@ -382,7 +387,9 @@
     <textarea id="qd" name="details" placeholder="Brief description — scope, location, timeline…"></textarea>
   </div>
   <div class="qsubmit qfull">
-    <button type="submit" class="btn btn-red">Send My Request <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></button>
+    <button type="submit" class="btn btn-red" data-cursor="Send">
+      Send My Request <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+    </button>
   </div>
 </form>
   </div>
@@ -394,7 +401,7 @@
       <div>
         <div class="foot-name">Freedom Group Construction</div>
         <p class="foot-tagline">Built Right. Licensed for Everything.</p>
-        <p class="foot-license">Unlimited General Contractor License — NC</p>
+        <p class="foot-lic">Unlimited General Contractor License — NC</p>
       </div>
       <div><h4>Services</h4><a href="services/new-home-construction.html">New Home Construction</a>
     <a href="services/home-additions.html">Home Additions</a>
@@ -403,8 +410,7 @@
     <a href="services/decks-outdoor-living.html">Decks & Outdoor Living</a>
     <a href="services/roofing-structural-repairs.html">Roofing & Structural Repairs</a></div>
       <div>
-        <h4>Service Areas</h4>
-        <a href="locations/charlotte.html">Charlotte, NC</a>
+        <h4>Service Areas</h4><a href="locations/charlotte.html">Charlotte, NC</a>
     <a href="locations/huntersville.html">Huntersville, NC</a>
     <a href="locations/concord.html">Concord, NC</a>
     <a href="locations/mooresville.html">Mooresville, NC</a>
@@ -421,7 +427,7 @@
         <a href="index.html#about">About Us</a>
       </div>
     </div>
-    <div class="foot-bottom">
+    <div class="foot-btm">
       <span>&copy; 2026 Freedom Group Construction. All rights reserved.</span>
       <span>Charlotte, NC &amp; the surrounding metro</span>
     </div>
